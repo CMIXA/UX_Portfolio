@@ -6,28 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/cm1.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
 
     <title>Chris Mixa</title>
   </head>
   <body>
-    <h1>HiWWWWW</h1>
-    <a href="project1.html">link to page 2</a>
+    <div>
+      <!-- <nav className={visible ? "nav nav-fixed" : "nav"}> -->
+      <div class="navbar">
+        <div>
+          <a class="title-container" href="index.html">
+            <h1 class="title">Chris Mixa</h1>
+          </a>
+        </div>
+        <!-- {/* <ul className="navlinks"> */} -->
+        <ul class="navlinks">
+          <!-- <ul class="navlinks" -->
+          <li class="navbar-item navbar-dropdown">
+            <a href="/">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/mywork">Portfolio</a>
+          </li>
+          <li class="navbar-item">
+            <a
+              href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
+              target="/blank"
+            >
+              Resume
+            </a>
+          </li>
+        </ul>
+        <!-- <div class="hamburger-menu" id="hamburgerMenu" onClick="{toggleMenu}">
+          <div class="hamburger-menu-line"></div>
+          <div class="hamburger-menu-line"></div>
+          <div class="hamburger-menu-line"></div>
+        </div> -->
+        <div class="login-paid">
+          <a href="https://github.com/CMIXA" target="/blank">
+            <img class="social-media" src="images/github.png" />
+          </a>
+          <a
+            id="right-link"
+            href="https://www.linkedin.com/in/christopher-mixa/"
+            target="/blank"
+          >
+            <img class="social-media" src="images/linkedin (1).png" />
+          </a>
+          <a id="right-link" href="#">
+            <button>Contact me</button>
+          </a>
+        </div>
+      </div>
+      <!-- </nav> -->
+
+      <div class="nav-space"></div>
+      <section class="home">
+        <div class="h-left-div">
+          <h1>Hi, Im Chris</h1>
+          <h1>UI/UX Designer & Dev</h1>
+          <p>
+            Passionate about solving tech’s new challenges and creating
+            effortless experiences
+          </p>
+          <div class="button-container">
+            <a href="#">
+              <button>Learn more about me</button>
+            </a>
+            <a href="#">
+              <button>Check out my work</button>
+            </a>
+          </div>
+        </div>
+        <div class="h-right-div">
+          <!-- <img src={me4} /> -->
+        </div>
+      </section>
+      <h1>HiWWWWW</h1>
+      <a href="project1.html">link to page 2</a>
+      <div class="testblock"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
