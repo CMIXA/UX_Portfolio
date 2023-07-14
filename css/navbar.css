@@ -36,13 +36,13 @@
   margin-right: 10px;
 } */
 
-.navbar {
+/* .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
   padding: 20px;
-}
+} */
 
 .login-paid {
   align-items: center;
@@ -81,6 +81,9 @@
 
 .nav {
   /* background-color: rgb(14, 14, 17); */
+  align-items: center;
+  display: flex;
+  justify-content: center;
   position: relative;
   transition: all 0.5s ease-out;
   z-index: 10;
@@ -233,8 +236,9 @@
 }
 
 .hamburger-menu-line {
-  width: 25px;
-  height: 3px;
+  border-radius: 100px;
+  width: 28px;
+  height: 2px;
   background-color: #fff;
   margin-bottom: 5px;
 }
