@@ -36,6 +36,14 @@
   margin-right: 10px;
 } */
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 20px;
+}
+
 .login-paid {
   align-items: center;
   display: flex;
