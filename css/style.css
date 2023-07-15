@@ -162,27 +162,27 @@ button:hover {
 /* PROJECT BOX */
 
 #sc-omni {
-  background-image: url(/images/Omni.png);
+  background-image: url(./Omni.png);
 }
 
 #sc-joi {
-  background-image: url(/images/joi.png);
+  background-image: url(./joi.png);
 }
 
 #sc-mo {
-  background-image: url(/images/MO.png);
+  background-image: url(./MO.png);
 }
 
 #sc-vrl {
-  background-image: url(/images/VR.png);
+  background-image: url(./VR.png);
 }
 
 #sc-ii {
-  background-image: url(/images/II.png);
+  background-image: url(./II.png);
 }
 
 #sc-pm8 {
-  background-image: url(/images/P8.png);
+  background-image: url(./P8.png);
 }
 
 .square {
