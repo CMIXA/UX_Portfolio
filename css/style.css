@@ -160,12 +160,37 @@ button:hover {
 /*  */
 
 /* PROJECT BOX */
+
+#sc-omni {
+  background-image: url(/images/Omni.png);
+}
+
+#sc-joi {
+  background-image: url(/images/joi.png);
+}
+
+#sc-mo {
+  background-image: url(/images/MO.png);
+}
+
+#sc-vrl {
+  background-image: url(/images/VR.png);
+}
+
+#sc-ii {
+  background-image: url(/images/II.png);
+}
+
+#sc-pm8 {
+  background-image: url(/images/P8.png);
+}
+
 .square {
   position: relative;
   width: 500px;
   width: 98%;
   height: 400px;
-  background-color: rgb(89, 136, 136);
+  /* background-color: rgb(89, 136, 136); */
   /* background-image: url("Omni.png"); */
   background-position: center;
   background-size: cover;
