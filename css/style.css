@@ -10,6 +10,10 @@
   /* font-weight: 200; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   font-weight: 300;
 }
@@ -32,17 +36,8 @@ p {
 }
 
 body {
-  /* background: linear-gradient(
-    99.49deg,
-    #1a4ea1 14.51%,
-    rgba(14, 14, 22, 0.904) 77.41%
-  );
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-
   background-color: rgb(15, 13, 25);
   height: auto;
-  /* background-color: rgb(23, 24, 26); */
   background-image: url(../images/palmlong.jpeg);
   background-position: center center;
   background-size: cover;
@@ -283,4 +278,10 @@ button:hover {
 
 .proj-img {
   width: 100%;
+}
+
+
+
+#section1, #section2 {
+  height: 1000px;
 }

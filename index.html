@@ -21,6 +21,7 @@
 
     <title>Chris Mixa</title>
   </head>
+
   <body>
     <div class="main-container">
       <!-- NAVBAR -->
@@ -34,28 +35,28 @@
           <!-- {/* <ul className="navlinks"> */} -->
           <ul class="navlinks">
             <!-- <ul class="navlinks" -->
-            <li class="navbar-item navbar-dropdown">
-              <a href="/">Home</a>
+            <li class="navbar-item">
+              <a href="#Home" onclick="scrollToSection('#Home')">Home</a>
             </li>
             <li class="navbar-item">
-              <a href="/mywork">Portfolio</a>
+              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')">Portfolio</a>
             </li>
             <li class="navbar-item">
               <a
                 href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
-                target="/blank"
+                target="_blank"
               >
                 Resume
               </a>
             </li>
           </ul>
-          <div class="hamburger-menu" id="hamburgerMenu" onClick="{toggleMenu}">
+          <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
             <div class="hamburger-menu-line"></div>
             <div class="hamburger-menu-line"></div>
             <div class="hamburger-menu-line"></div>
           </div>
           <div class="login-paid">
-            <a href="https://github.com/CMIXA" target="/blank">
+            <a href="https://github.com/CMIXA" target="_blank">
               <img class="social-media" src="images/github-W.png" />
             </a>
             <a
@@ -65,7 +66,7 @@
             >
               <img class="social-media" src="images/linkedin-W.png" />
             </a>
-            <a id="right-link" href="#">
+            <a id="right-link" href="#Contact" onclick="scrollToSection('#Contact')">
               <button>Contact me</button>
             </a>
           </div>
@@ -74,8 +75,7 @@
       <!--  -->
 
       <!-- HOME SECTION -->
-      <div class="nav-space"></div>
-      <section class="home-section">
+      <section class="home-section" id="Home">
         <div class="h-left-div">
           <h1>Hi, Im Chris</h1>
           <h1>UI/UX Designer & Dev</h1>
@@ -99,7 +99,7 @@
       <!--  -->
 
       <!-- PROJECTS SECTION -->
-      <div class="portfolio-page">
+      <section class="portfolio-page" id="Portfolio">
         <div class="nav-space"></div>
         <div class="portfolio-container">
           <div class="portfolio-text">
@@ -177,18 +177,39 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!--  -->
 
       <!-- ABOUT SECTION -->
       <!--  -->
 
       <!-- CONTACT SECTION -->
+      <section id="Contact">
+        <h1>Contact</h1>
+      </section>
       <!--  -->
       <h1>HiWWWWW</h1>
-      <a href="project1.html">link to page 2</a>
       <div class="testblock"></div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    </script>
+    <!-- <script>
+      function scrollToSection(sectionId) {
+        var target = document.getElementById(sectionId);
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+    </script> -->
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
