@@ -266,3 +266,21 @@ button:hover {
 .testblock {
   height: 2000px;
 }
+
+
+/* PROJECT PAGES */
+
+/* Project 1 */
+
+.project-container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.proj-img {
+  width: 100%;
+}

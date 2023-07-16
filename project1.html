@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/CM1 Fav.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,12 +17,70 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
 
     <title>Project 1</title>
+
   </head>
   <body>
-    <h1>Helwwwwwlo</h1>
-    <a href="index.html">back</a>
+    <div>
+      <!-- NAVBAR -->
+      <div class="main-container">
+        <!-- NAVBAR -->
+        <nav class="nav">
+          <div class="navbar">
+            <div>
+              <a class="title-container" href="index.html">
+                <h1 class="title">Chris Mixa</h1>
+              </a>
+            </div>
+            <!-- {/* <ul className="navlinks"> */} -->
+            <ul class="navlinks">
+              <!-- <ul class="navlinks" -->
+              <li class="navbar-item navbar-dropdown">
+                <a href="/">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a href="/mywork">Portfolio</a>
+              </li>
+              <li class="navbar-item">
+                <a
+                  href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
+                  target="/blank"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+            <div class="hamburger-menu" id="hamburgerMenu" onClick="{toggleMenu}">
+              <div class="hamburger-menu-line"></div>
+              <div class="hamburger-menu-line"></div>
+              <div class="hamburger-menu-line"></div>
+            </div>
+            <div class="login-paid">
+              <a href="https://github.com/CMIXA" target="/blank">
+                <img class="social-media" src="images/github-W.png" />
+              </a>
+              <a
+                id="right-link"
+                href="https://www.linkedin.com/in/christopher-mixa/"
+                target="/blank"
+              >
+                <img class="social-media" src="images/linkedin-W.png" />
+              </a>
+              <a id="right-link" href="#">
+                <button>Contact me</button>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!--  -->
+      <div class="project-container">
+        <img src="images/iiproj.png" alt="" class="proj-img">
+      </div>
+    </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
