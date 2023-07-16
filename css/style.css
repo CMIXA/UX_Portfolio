@@ -16,6 +16,7 @@ html {
 
 a {
   font-weight: 300;
+  text-decoration: none;
 }
 
 h1 {
@@ -57,7 +58,6 @@ button {
   font-size: 0.875rem;
   padding: 12px 24px;
   margin-right: 16px;
-
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -257,11 +257,6 @@ button:hover {
     width: 300px;
   }
 }
-
-.testblock {
-  height: 2000px;
-}
-
 
 /* PROJECT PAGES */
 
