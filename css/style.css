@@ -156,6 +156,8 @@ button:hover {
 
 /* PROJECT BOX */
 
+/* PROJECT BOX */
+
 #sc-omni {
   background-image: url(../images/Omni.png);
 }
@@ -180,23 +182,34 @@ button:hover {
   background-image: url(../images/P8.png);
 }
 
+/* Add the following styles for the overlay */
+.square::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent initially */
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.square:hover::before {
+  background-color: rgba(0, 0, 0, 0.6); /* 60% opacity on hover */
+}
+
 .square {
   position: relative;
   width: 500px;
   width: 98%;
   height: 400px;
-  /* background-color: rgb(89, 136, 136); */
-  /* background-image: url("Omni.png"); */
   background-position: center;
   background-size: cover;
-  transition: filter 0.3s ease-in-out;
+  transition: filter 0.2s ease-in-out;
   cursor: pointer;
   margin: 8px;
   border-radius: 5px;
-}
-
-.square:hover {
-  filter: brightness(0.7);
 }
 
 .square-container {
@@ -209,10 +222,15 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.text p {
+  font-size: 24px;
+  color: #ffffff;
 }
 
 .square:hover .text {
@@ -221,12 +239,6 @@ button:hover {
 
 @media (max-width: 1024px) {
   .square-container {
-    /* display: flex;
-      flex-direction: column;
-      align-self: center;
-      justify-content: center; */
-    /* width: 100%; */
-
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -275,8 +287,7 @@ button:hover {
   width: 100%;
 }
 
-
-
-#section1, #section2 {
+#section1,
+#section2 {
   height: 1000px;
 }

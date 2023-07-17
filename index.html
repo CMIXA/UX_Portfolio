@@ -39,7 +39,9 @@
               <a href="#Home" onclick="scrollToSection('#Home')">Home</a>
             </li>
             <li class="navbar-item">
-              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')">Portfolio</a>
+              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')"
+                >Portfolio</a
+              >
             </li>
             <li class="navbar-item">
               <a
@@ -66,7 +68,11 @@
             >
               <img class="social-media" src="images/linkedin-W.png" />
             </a>
-            <a id="right-link" href="#Contact" onclick="scrollToSection('#Contact')">
+            <a
+              id="right-link"
+              href="#Contact"
+              onclick="scrollToSection('#Contact')"
+            >
               <button>Contact me</button>
             </a>
           </div>
@@ -113,30 +119,24 @@
             </p>
           </div>
           <div class="portfolio-projects">
-            <!-- <div className="portfolio-projects-row">
-              <Projectbox
-                projectName="Omni Health App"
-                backgroundImage={Omni}
-                linkAddress="/omni"
-              />
-              <Projectbox
-                projectName="VR Live App"
-                backgroundImage={VR}
-                linkAddress="/vrl"
-              />
-            </div> -->
             <div class="portfolio-projects-row">
               <div class="square-container">
                 <a href="project1.html">
                   <div class="square" id="sc-omni">
-                    <div class="text">Omni Health</div>
+                    <div class="text">
+                      <p>Omni Health App</p>
+                      <p>UX Case Study</p>
+                    </div>
                   </div>
                 </a>
               </div>
               <div class="square-container">
                 <a href="">
                   <div class="square" id="sc-joi">
-                    <div class="text">Joi Generative AI</div>
+                    <div class="text">
+                      <p>Joi Generative AI</p>
+                      <p>In-Progress</p>
+                    </div>
                   </div>
                 </a>
               </div>
@@ -146,14 +146,20 @@
               <div class="square-container">
                 <a href="">
                   <div class="square" id="sc-mo">
-                    <div class="text">Mixa Orthopedics</div>
+                    <div class="text">
+                      <p>Mixa Orthopedics</p>
+                      <p>UX Case Study</p>
+                    </div>
                   </div>
                 </a>
               </div>
               <div class="square-container">
                 <a href="">
                   <div class="square" id="sc-vrl">
-                    <div class="text">VR Live</div>
+                    <div class="text">
+                      <p>VR Live</p>
+                      <p>UX Case Study</p>
+                    </div>
                   </div>
                 </a>
               </div>
@@ -163,14 +169,20 @@
               <div class="square-container">
                 <a href="">
                   <div class="square" id="sc-ii">
-                    <div class="text">Immersive Insights</div>
+                    <div class="text">
+                      <p>Immersive Insights</p>
+                      <p>UI Project</p>
+                    </div>
                   </div>
                 </a>
               </div>
               <div class="square-container">
                 <a href="">
                   <div class="square" id="sc-pm8">
-                    <div class="text">Project M8te</div>
+                    <div class="text">
+                      <p>Project M8</p>
+                      <p>In-Progress</p>
+                    </div>
                   </div>
                 </a>
               </div>
@@ -196,7 +208,7 @@
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
         if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
+          section.scrollIntoView({ behavior: "smooth" });
         }
       }
     </script>
