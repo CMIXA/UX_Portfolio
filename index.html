@@ -26,6 +26,7 @@
     <div class="main-container">
       <!-- NAVBAR -->
       <nav class="nav">
+        <div class="nav-block"></div>
         <div class="navbar">
           <div>
             <a class="title-container" href="index.html">
@@ -79,27 +80,30 @@
         </div>
       </nav>
       <!--  -->
-
+      <!-- <div class="nav-space"></div> -->
       <!-- HOME SECTION -->
-      <section class="home-section" id="Home">
-        <div class="h-left-div">
-          <h1>Hi, Im Chris</h1>
-          <h1>UI/UX Designer & Dev</h1>
-          <p>
-            Passionate about solving tech’s new challenges and creating
-            effortless experiences
-          </p>
-          <div class="button-container">
-            <a href="#Contact" onclick="scrollToSection('#Contact')">
-              <button>Learn more about me</button>
-            </a>
-            <a href="#Portfolio" onclick="scrollToSection('#Portfolio')">
-              <button>Check out my work</button>
-            </a>
+      <section id="Home">
+        <div class="nav-space"></div>
+        <div class="home-section">
+          <div class="h-left-div">
+            <h1>Hi, Im Chris</h1>
+            <h1>UI/UX Designer & Dev</h1>
+            <p>
+              Passionate about solving tech’s new challenges and creating
+              effortless experiences
+            </p>
+            <div class="button-container">
+              <a href="#Contact" onclick="scrollToSection('#Contact')">
+                <button>Learn more about me</button>
+              </a>
+              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')">
+                <button>Check out my work</button>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="h-right-div">
-          <img src="images/me4.png" />
+          <div class="h-right-div">
+            <img src="images/me4.png" />
+          </div>
         </div>
       </section>
       <!--  -->
@@ -204,24 +208,7 @@
       <div class="testblock"></div>
     </div>
 
-    <script>
-      function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
-      }
-    </script>
-    <!-- <script>
-      function scrollToSection(sectionId) {
-        var target = document.getElementById(sectionId);
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      }
-    </script> -->
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
