@@ -91,10 +91,6 @@
   width: 100%;
 }
 
-.nav-space {
-  height: 80px;
-}
-
 .navbar {
   /* position: fixed; */
   align-items: center;
@@ -184,6 +180,11 @@
   display: flex;
   text-decoration: none;
   width: 180px;
+}
+
+.title-container img {
+  width: 32px;
+  margin-right: 16px;
 }
 
 /* H MENU */
