@@ -44,43 +44,22 @@
   padding: 32px;
 }
 
-/* .navbar-dropdown {
-  position: relative;
-} */
-
 .navbar-item {
   height: 90%;
 }
 
-/* .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  padding: 16px;
-  list-style-type: none;
-  margin: 0;
-  width: 280px;
-} */
-
 .navbar a:hover {
   color: #cacaca;
 }
-/* 
-.navbar-dropdown:hover .dropdown-menu {
-  display: block;
-} */
 
-.nav-fixed {
+/* .nav-fixed {
   position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
   display: flex;
   justify-content: center;
-}
+} */
 
 .navlinks {
   display: flex;
@@ -140,31 +119,58 @@
   margin-bottom: 5px;
 }
 
-/* Media query for hamburger menu */
-@media screen and (max-width: 768px) {
-  .login-paid {
-    display: none;
-  }
+
+.dropdown-menu {
+  display: none;
+  /* position: absolute; */
+  background-color: rgb(0, 0, 0, 0.7);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 80%;
+  z-index: 0;
+}
+
+.navlinks-dropdown {
+  list-style: none;
+  padding: 0;
+  /* margin-top: 110px; */
+}
+
+.navlinks-dropdown .navbar-item {
+  display: block;
+}
+
+.navlinks-dropdown .navbar-item a {
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  margin: 24px;
 }
 
 /* Media query for hamburger menu */
+/* @media screen and (max-width: 768px) {
+  .login-paid {
+    display: none;
+  }
+} */
+
+/* Media query for hamburger menu */
 @media screen and (max-width: 900px) {
+
+  /* .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    padding: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } */
+
   .navlinks {
     display: none;
   }
 
   .navlinks.active {
-    display: flex; /* Uncomment this line to display the links */
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: flex-end;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    transition: transform 0.3s ease-in-out;
+    display: flex;
   }
 
   .login-paid {
