@@ -100,9 +100,13 @@
   width: 180px;
 }
 
+.title-container h3 {
+  font-weight: 500;
+}
+
 .title-container img {
-  width: 32px;
-  margin-right: 16px;
+  width: 24px;
+  margin-right: 10px;
 }
 
 /* Hamburger menu styles */
@@ -184,5 +188,9 @@
 
   button {
     margin-bottom: 0;
+  }
+
+  .title-container h3 {
+    display: none;
   }
 }
