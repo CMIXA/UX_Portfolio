@@ -44,15 +44,15 @@
   padding: 32px;
 }
 
-.navbar-dropdown {
+/* .navbar-dropdown {
   position: relative;
-}
+} */
 
 .navbar-item {
   height: 90%;
 }
 
-.dropdown-menu {
+/* .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -63,15 +63,15 @@
   list-style-type: none;
   margin: 0;
   width: 280px;
-}
+} */
 
 .navbar a:hover {
   color: #cacaca;
 }
-
+/* 
 .navbar-dropdown:hover .dropdown-menu {
   display: block;
-}
+} */
 
 .nav-fixed {
   position: fixed;
@@ -126,122 +126,6 @@
   margin-right: 16px;
 }
 
-/* H MENU */
-
-/* Hamburger menu styles */
-/* .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 12px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
-    transition: transform 0.3s ease-in-out;
-  } */
-
-/* Mobile navigation styles */
-/* .mobile-nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(14, 14, 17);
-    padding: 32px;
-    z-index: 999;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .mobile-navlinks {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .mobile-navlinks li {
-    margin-bottom: 24px;
-  }
-  
-  .mobile-navlinks a {
-    color: #fff;
-    font-size: 1.25rem;
-    text-decoration: none;
-  } */
-
-/* .hamburger-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.hamburger-menu-line {
-  border-radius: 100px;
-  width: 28px;
-  height: 2px;
-  background-color: #fff;
-  margin-bottom: 5px;
-} */
-
-/* Hamburger menu styles */
-/* .hamburger-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.hamburger-menu-line {
-  border-radius: 100px;
-  width: 28px;
-  height: 2px;
-  background-color: #fff;
-  margin-bottom: 5px;
-} */
-
-/* Mobile navigation styles */
-/* .overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 999;
-  padding: 32px;
-  flex-direction: column;
-}
-
-.overlay .cancel {
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: right;
-}
-
-.mobile-navlinks {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.mobile-navlinks li {
-  margin-bottom: 24px;
-}
-
-.mobile-navlinks a {
-  color: #fff;
-  font-size: 1.25rem;
-  text-decoration: none;
-} */
-
-/* Rest of your CSS */
-
 /* Hamburger menu styles */
 .hamburger-menu {
   display: none;
@@ -255,49 +139,6 @@
   background-color: #fff;
   margin-bottom: 5px;
 }
-
-/* Mobile navigation styles */
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 999;
-  padding: 32px;
-  flex-direction: column;
-}
-
-.overlay.active {
-  display: flex;
-}
-
-.overlay .cancel {
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: right;
-}
-
-.mobile-navlinks {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.mobile-navlinks li {
-  margin-bottom: 24px;
-}
-
-.mobile-navlinks a {
-  color: #fff;
-  font-size: 1.25rem;
-  text-decoration: none;
-}
-
-/* Rest of your CSS */
 
 /* Media query for hamburger menu */
 @media screen and (max-width: 768px) {
