@@ -21,46 +21,41 @@
 
     <title>Chris Mixa</title>
   </head>
-
   <body>
     <div class="main-container">
       <!-- NAVBAR -->
       <nav class="nav">
-        <div class="nav-block"></div>
         <div class="navbar">
           <div>
             <a class="title-container" href="index.html">
               <h1 class="title">Chris Mixa</h1>
             </a>
           </div>
+          <!-- {/* <ul className="navlinks"> */} -->
           <ul class="navlinks">
-            <li class="navbar-item">
-              <a href="#Home" onclick="scrollToSection('#Home')">Home</a>
+            <!-- <ul class="navlinks" -->
+            <li class="navbar-item navbar-dropdown">
+              <a href="/">Home</a>
             </li>
             <li class="navbar-item">
-              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')"
-                >Portfolio</a
-              >
-            </li>
-            <li class="navbar-item">
-              <a href="#About" onclick="scrollToSection('#About')">About</a>
+              <a href="/mywork">Portfolio</a>
             </li>
             <li class="navbar-item">
               <a
                 href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
-                target="_blank"
+                target="/blank"
               >
                 Resume
               </a>
             </li>
           </ul>
-          <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
+          <div class="hamburger-menu" id="hamburgerMenu" onClick="{toggleMenu}">
             <div class="hamburger-menu-line"></div>
             <div class="hamburger-menu-line"></div>
             <div class="hamburger-menu-line"></div>
           </div>
           <div class="login-paid">
-            <a href="https://github.com/CMIXA" target="_blank">
+            <a href="https://github.com/CMIXA" target="/blank">
               <img class="social-media" src="images/github-W.png" />
             </a>
             <a
@@ -70,11 +65,7 @@
             >
               <img class="social-media" src="images/linkedin-W.png" />
             </a>
-            <a
-              id="right-link"
-              href="#Contact"
-              onclick="scrollToSection('#Contact')"
-            >
+            <a id="right-link" href="#">
               <button>Contact me</button>
             </a>
           </div>
@@ -83,34 +74,33 @@
       <!--  -->
 
       <!-- HOME SECTION -->
-      <section id="Home">
-        <div class="nav-space"></div>
-        <div class="home-section">
-          <div class="h-left-div">
-            <h1>Hi, Im Chris</h1>
-            <h1>UI/UX Designer & Dev</h1>
-            <p>
-              Passionate about solving tech’s new challenges and creating
-              effortless experiences
-            </p>
-            <div class="button-container">
-              <a href="#About" onclick="scrollToSection('#About')">
-                <button>Learn more about me</button>
-              </a>
-              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')">
-                <button>Check out my work</button>
-              </a>
-            </div>
+      <div class="nav-space"></div>
+      <section class="home-section">
+        <div class="h-left-div">
+          <h1>Hi, Im Chris</h1>
+          <h1>UI/UX Designer & Dev</h1>
+          <p>
+            Passionate about solving tech’s new challenges and creating
+            effortless experiences
+          </p>
+          <div class="button-container">
+            <a href="#">
+              <button>Learn more about me</button>
+            </a>
+            <a href="#">
+              <button>Check out my work</button>
+            </a>
           </div>
-          <div class="h-right-div">
-            <img src="images/me4.png" />
-          </div>
+        </div>
+        <div class="h-right-div">
+          <img src="images/me4.png" />
         </div>
       </section>
       <!--  -->
 
       <!-- PROJECTS SECTION -->
-      <section class="portfolio-page" id="Portfolio">
+      <div class="portfolio-page">
+        <div class="nav-space"></div>
         <div class="portfolio-container">
           <div class="portfolio-text">
             <h1>My Portfolio</h1>
@@ -123,24 +113,30 @@
             </p>
           </div>
           <div class="portfolio-projects">
+            <!-- <div className="portfolio-projects-row">
+              <Projectbox
+                projectName="Omni Health App"
+                backgroundImage={Omni}
+                linkAddress="/omni"
+              />
+              <Projectbox
+                projectName="VR Live App"
+                backgroundImage={VR}
+                linkAddress="/vrl"
+              />
+            </div> -->
             <div class="portfolio-projects-row">
               <div class="square-container">
-                <a href="project1.html">
+                <a href="">
                   <div class="square" id="sc-omni">
-                    <div class="text">
-                      <p>Omni Health App</p>
-                      <p>UX Case Study</p>
-                    </div>
+                    <div class="text">Omni Health</div>
                   </div>
                 </a>
               </div>
               <div class="square-container">
-                <a href="project2.html">
+                <a href="">
                   <div class="square" id="sc-joi">
-                    <div class="text">
-                      <p>Joi Generative AI</p>
-                      <p>In-Progress</p>
-                    </div>
+                    <div class="text">Joi Generative AI</div>
                   </div>
                 </a>
               </div>
@@ -148,22 +144,16 @@
             <!--  -->
             <div class="portfolio-projects-row">
               <div class="square-container">
-                <a href="project3.html">
+                <a href="">
                   <div class="square" id="sc-mo">
-                    <div class="text">
-                      <p>Mixa Orthopedics</p>
-                      <p>UX Case Study</p>
-                    </div>
+                    <div class="text">Mixa Orthopedics</div>
                   </div>
                 </a>
               </div>
               <div class="square-container">
-                <a href="project4.html">
+                <a href="">
                   <div class="square" id="sc-vrl">
-                    <div class="text">
-                      <p>VR Live</p>
-                      <p>UX Case Study</p>
-                    </div>
+                    <div class="text">VR Live</div>
                   </div>
                 </a>
               </div>
@@ -171,117 +161,34 @@
             <!--  -->
             <div class="portfolio-projects-row">
               <div class="square-container">
-                <a href="project5.html">
+                <a href="">
                   <div class="square" id="sc-ii">
-                    <div class="text">
-                      <p>Immersive Insights</p>
-                      <p>UI Project</p>
-                    </div>
+                    <div class="text">Immersive Insights</div>
                   </div>
                 </a>
               </div>
               <div class="square-container">
-                <a href="project6.html">
+                <a href="">
                   <div class="square" id="sc-pm8">
-                    <div class="text">
-                      <p>Project M8</p>
-                      <p>In-Progress</p>
-                    </div>
+                    <div class="text">Project M8te</div>
                   </div>
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!--  -->
 
       <!-- ABOUT SECTION -->
-      <section id="About">
-        <div class="about-container"></div>
-      </section>
       <!--  -->
 
       <!-- CONTACT SECTION -->
-      <section id="Contact">
-        <div class="contact-container">
-          <div class="contact-page">
-            <div class="contact-form-container">
-              <div class="left-div">
-                <img
-                  class="contact-image"
-                  src="images/cm1.png"
-                  alt="initials"
-                />
-                <div class="contact-info">
-                  <div>
-                    <img class="contact-icon" src="images/email.png" />
-                    <p>cmixa8@gmail.com</p>
-                  </div>
-                  <div>
-                    <img class="contact-icon" src="images/phone.png" />
-                    <p>727-743-2397</p>
-                  </div>
-                  <div>
-                    <img class="contact-icon" src="images/location.png" />
-                    <p>St. Petersburg, FL</p>
-                  </div>
-                </div>
-              </div>
-              <div class="right-div">
-                <div class="form-title">
-                  <h1>Get in touch with me</h1>
-                  <p>
-                    Don't hesitate to connect with me. I look forward to hearing
-                    from you and exploring opportunities to work together!
-                  </p>
-                </div>
-                <form
-                  action="https://formsubmit.co/cmixa8@gmail.com"
-                  method="POST"
-                >
-                  <div class="fl-name">
-                    <div class="f-name" id="div">
-                      <label>First Name</label>
-                      <input type="firstname" name="name" />
-                    </div>
-                    <div id="div">
-                      <label>Last Name</label>
-                      <input type="lastname" name="name" />
-                    </div>
-                  </div>
-                  <div id="div">
-                    <label>Email</label>
-                    <input type="email" name="email" />
-                  </div>
-                  <div id="div">
-                    <label>Message</label>
-                    <textarea name="message"></textarea>
-                  </div>
-                  <input
-                    type="hidden"
-                    name="_next"
-                    value="https://yourdomain.co/thanks.html"
-                  />
-                  <button type="submit">Send</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="footer-container">
-          <p class="footer-text">
-            Chris Mixa's Porfolio | Developed by CM on Github
-          </p>
-          <img src="images/github-W.png" alt="" />
-        </div>
-      </footer>
       <!--  -->
+      <h1>HiWWWWW</h1>
+      <a href="project1.html">link to page 2</a>
+      <div class="testblock"></div>
     </div>
-
     <script src="script.js"></script>
-    <script src="index.js"></script>
   </body>
 </html>

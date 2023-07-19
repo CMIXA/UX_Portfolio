@@ -85,14 +85,11 @@
   display: flex;
   justify-content: center;
   position: relative;
-  position: fixed;
   transition: all 0.5s ease-out;
   z-index: 10;
-  width: 100%;
 }
 
 .navbar {
-  /* position: fixed; */
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -135,8 +132,9 @@
   top: 0;
   z-index: 10;
   width: 100%;
-  /* transition: all 0.3s ease-in-out; */
+  transition: all 0.3s ease-in-out;
 
+  /* box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.016); */
   display: flex;
   /* height: 96px; */
   justify-content: center;
@@ -180,11 +178,6 @@
   display: flex;
   text-decoration: none;
   width: 180px;
-}
-
-.title-container img {
-  width: 32px;
-  margin-right: 16px;
 }
 
 /* H MENU */
