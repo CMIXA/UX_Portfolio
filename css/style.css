@@ -356,17 +356,10 @@ button:hover {
   margin-bottom: 24px;
 }
 
-.contact-info2 div {
+/* .contact-info2 div {
   align-items: center;
   display: flex;
   margin-bottom: 24px;
-}
-
-/* 
-.contact-page {
-  background: linear-gradient(180deg, #3c3f61 0%, #929292 100%);
-  min-height: 100vh;
-  overflow-y: auto;
 } */
 
 .f-name {
@@ -375,13 +368,8 @@ button:hover {
 
 .fl-name {
   display: flex;
-  /* justify-content: space-between; */
   margin: 0;
 }
-
-/* form {
-  max-width: ;
-} */
 
 .form-title {
   margin-bottom: 24px;
@@ -466,13 +454,22 @@ button[type="submit"] {
 } */
 
 @media (max-width: 1000px) {
+  .contact-container {
+    margin-bottom: 40px;
+  }
+
   .contact-form-container {
     display: block;
     margin: 0 auto;
     padding: 30px 20px;
   }
 
+  .contact-image {
+    width: 50%;
+  }
+
   .contact-info {
+    padding-bottom: 30px;
     margin: 0 auto;
     align-items: center;
     display: flex;
@@ -496,3 +493,24 @@ button[type="submit"] {
 }
 
 /*  */
+
+/* FOOTER */
+
+footer {
+  padding-bottom: 24px;
+}
+
+.footer-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container img {
+  width: 12px;
+}
+
+.footer-text {
+  font-size: 12px;
+  margin-right: 6px;
+}
