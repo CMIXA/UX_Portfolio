@@ -43,6 +43,9 @@
               >
             </li>
             <li class="navbar-item">
+              <a href="#About" onclick="scrollToSection('#About')">About</a>
+            </li>
+            <li class="navbar-item">
               <a
                 href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
                 target="_blank"
@@ -91,7 +94,7 @@
               effortless experiences
             </p>
             <div class="button-container">
-              <a href="#Contact" onclick="scrollToSection('#Contact')">
+              <a href="#About" onclick="scrollToSection('#About')">
                 <button>Learn more about me</button>
               </a>
               <a href="#Portfolio" onclick="scrollToSection('#Portfolio')">
@@ -194,15 +197,81 @@
       <!--  -->
 
       <!-- ABOUT SECTION -->
+      <section id="About">
+        <div class="about-container"></div>
+      </section>
       <!--  -->
 
       <!-- CONTACT SECTION -->
       <section id="Contact">
-        <h1>Contact</h1>
+        <div class="contact-container">
+          <div class="contact-page">
+            <div class="contact-form-container">
+              <div class="left-div">
+                <img
+                  class="contact-image"
+                  src="images/cm1.png"
+                  alt="initials"
+                />
+                <div class="contact-info">
+                  <div>
+                    <img class="contact-icon" src="images/email.png" />
+                    <p>cmixa8@gmail.com</p>
+                  </div>
+                  <div>
+                    <img class="contact-icon" src="images/phone.png" />
+                    <p>727-743-2397</p>
+                  </div>
+                  <div>
+                    <img class="contact-icon" src="images/location.png" />
+                    <p>St. Petersburg, FL</p>
+                  </div>
+                </div>
+              </div>
+              <div class="right-div">
+                <div class="form-title">
+                  <h1>Get in touch with me</h1>
+                  <p>
+                    Don't hesitate to connect with me. I look forward to hearing
+                    from you and exploring opportunities to work together!
+                  </p>
+                </div>
+                <form
+                  action="https://formsubmit.co/cmixa8@gmail.com"
+                  method="POST"
+                >
+                  <div class="fl-name">
+                    <div class="f-name" id="div">
+                      <label>First Name</label>
+                      <input type="firstname" name="name" />
+                    </div>
+                    <div id="div">
+                      <label>Last Name</label>
+                      <input type="lastname" name="name" />
+                    </div>
+                  </div>
+                  <div id="div">
+                    <label>Email</label>
+                    <input type="email" name="email" />
+                  </div>
+                  <div id="div">
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+                  </div>
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://yourdomain.co/thanks.html"
+                  />
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <footer></footer>
       <!--  -->
-      <h1>HiWWWWW</h1>
-      <div class="testblock"></div>
     </div>
 
     <script src="script.js"></script>
