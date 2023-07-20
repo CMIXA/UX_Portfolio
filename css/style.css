@@ -313,9 +313,90 @@ button:hover {
 }
 
 /* ABOUT SECTION */
-.about-container {
-  height: 500px;
+
+/* .about-section {
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  padding: 80px 40px 140px 40px;
+} */
+
+.about-title {
+  margin-bottom: 16px;
 }
+
+.about-section {
+  max-width: 1200px; /* Add the max width you want for the "About" section */
+  display: flex; /* To keep the divs next to each other */
+  justify-content: space-between; /* To have them fill the available space */
+  align-items: center; /* To vertically align them */
+  padding: 80px 40px 80px 40px; /* Add some padding to create space around the content */
+  /* position: relative; */
+}
+
+.a-left-div {
+  /* flex: 1; */
+  padding: 20px;
+  max-width: 55%;
+}
+
+.a-right-div {
+  position: relative;
+  overflow: hidden; /* Clip the image if it overflows */
+  /* Add a negative margin to make the div extend outside the max width */
+  margin-right: -39px; /* Adjust this value as needed */
+  /* position: absolute; */
+}
+
+/* .h-right-div .img-wrapper {
+  overflow: hidden; 
+} */
+
+.about-section img {
+  /* overflow: hidden; Clip the image if it overflows */
+  width: 500px;
+}
+
+@media (max-width: 1000px) {
+  
+  .about-section {
+    display: block; /* To keep the divs next to each other */
+    /* margin: 0 auto; */
+  }
+
+  .a-left-div {
+    padding: 40px 20px;
+    max-width: none; /* Reset the max-width to allow it to take full width */
+    margin: 0px;
+    /* padding: 0px; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .a-right-div {
+    position: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 0px; 
+  }
+  
+  .h-right-div .img-wrapper {
+    overflow: hidden; /* Clip the image if it overflows */
+  }
+  
+  .about-section img {
+    /* overflow: hidden; Clip the image if it overflows */
+    width: 500px;
+  }
+
+}
+
+
 
 /*  */
 
