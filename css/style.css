@@ -345,33 +345,44 @@ button:hover {
 
 .a-right-div {
   position: relative;
-  overflow: hidden; /* Clip the image if it overflows */
-  /* Add a negative margin to make the div extend outside the max width */
-  margin-right: -39px; /* Adjust this value as needed */
-  /* position: absolute; */
+  overflow: hidden;
+  margin-right: -39px;
 }
 
-/* .h-right-div .img-wrapper {
-  overflow: hidden; 
-} */
 
 .about-section img {
   /* overflow: hidden; Clip the image if it overflows */
   width: 500px;
 }
 
+.in-prog {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.in-prog img {
+  margin-right: 8px;
+  width: 18px;
+}
+
+.in-prog p {
+  color: #fffb7f;
+  font-size: 16px;
+}
+
+
 @media (max-width: 1000px) {
   
   .about-section {
-    display: block; /* To keep the divs next to each other */
-    /* margin: 0 auto; */
+    display: block; 
   }
 
   .a-left-div {
     padding: 40px 20px;
     max-width: none; /* Reset the max-width to allow it to take full width */
     margin: 0px;
-    /* padding: 0px; */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -397,7 +408,6 @@ button:hover {
 }
 
 .cert-card {
-  /* background-color: #32353a; */
   background-color: rgba(35, 36, 40, 0.5); /* Semi-transparent background color */
   backdrop-filter: blur(10px); /* Background blur effect (adjust blur radius as needed) */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -415,7 +425,7 @@ button:hover {
   margin-bottom: 32px;
 }
 
-.cert-card img {
+.cert-img {
   margin: 32px 0px 16px 0px;
   width: 40px;
 }
@@ -445,7 +455,19 @@ button:hover {
   padding: 80px 40px 80px 40px;
 }
 
+@media (max-width: 900px) {
+  .cert-card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
+  .cert-card {
+    width: 400px;
+    margin-bottom: 26px;
+  }
+
+}
 
 /*  */
 
