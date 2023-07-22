@@ -463,8 +463,8 @@ button:hover {
   }
 
   .cert-card {
-    width: 400px;
-    margin-bottom: 26px;
+    Width: 350px;
+    margin: 0px 16px 26px 16px;
   }
 
 }
