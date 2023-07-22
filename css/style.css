@@ -495,7 +495,7 @@ button:hover {
 @media (max-width: 600px) {
   
   .cert-card {
-    width: 80%;
+    width: 100%;
   }
 
 }
