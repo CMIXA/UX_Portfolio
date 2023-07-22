@@ -405,6 +405,11 @@ button:hover {
     width: 500px;
   }
 
+  .in-prog {
+    margin-top: 0px;
+    margin-bottom: 32px;
+  }
+
 }
 
 .cert-card {
@@ -468,11 +473,29 @@ button:hover {
   }
 
   .cert-card {
-    width: 85%;
+    width: 70%;
     padding: 0 16px;
     height: auto;
     /* Width: 320px; */
     margin: 0px 16px 26px 16px;
+  }
+
+  .cert-name {
+    height: auto;
+    padding: 8px 0px 16px 0px;
+  }
+
+  /* .cert-card button {
+    font-size: 14px;
+    margin-right: 0px;
+  } */
+
+}
+
+@media (max-width: 600px) {
+  
+  .cert-card {
+    width: 80%;
   }
 
 }
