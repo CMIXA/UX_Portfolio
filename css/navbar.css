@@ -26,6 +26,7 @@
 
 .nav {
   align-items: center;
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
   display: flex;
   justify-content: center;
   position: relative;
