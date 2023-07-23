@@ -47,7 +47,7 @@ body {
 }
 
 .nav-space {
-  height: 120px;
+  height: 110px;
 }
 
 /* HOME SECTION */
@@ -107,6 +107,14 @@ button:hover {
 
 .h-right-div img {
   width: 350px;
+}
+
+@media (max-width: 1024px) {
+
+  .nav-space{
+    height: 60px;
+  }
+
 }
 
 /*  */
@@ -540,16 +548,6 @@ button:hover {
   display: flex;
   margin-bottom: 24px;
 }
-/* 
-.contact-page {
-  margin-top: 80px;
-} */
-
-/* .contact-info2 div {
-  align-items: center;
-  display: flex;
-  margin-bottom: 24px;
-} */
 
 .f-name {
   margin-right: 16px;
@@ -579,10 +577,6 @@ label {
 .left-div img {
   max-width: 300px;
   opacity: 50%;
-}
-
-.nav-space {
-  height: 110px;
 }
 
 .right-div {
