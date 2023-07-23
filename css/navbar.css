@@ -139,11 +139,16 @@
 .navlinks-dropdown {
   list-style: none;
   padding: 8px;
+  /* text-align: center; */
   /* margin-top: 110px; */
 }
 
 .navlinks-dropdown .navbar-item {
   display: block;
+}
+
+.navlinks-dropdown .navbar-item a:hover {
+  color: #cacaca
 }
 
 .navlinks-dropdown .navbar-item a {
@@ -162,15 +167,6 @@
 
 /* Media query for hamburger menu */
 @media screen and (max-width: 900px) {
-
-  /* .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #000000;
-    padding: 8px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  } */
 
   .navlinks {
     display: none;
