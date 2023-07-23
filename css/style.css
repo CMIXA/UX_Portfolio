@@ -415,12 +415,12 @@ button:hover {
 }
 
 .cert-card {
-  background-color: rgba(35, 36, 40, 0.5); /* Semi-transparent background color */
+  background-color: rgba(48, 50, 59, 0.5); /* Semi-transparent background color */
   backdrop-filter: blur(10px); /* Background blur effect (adjust blur radius as needed) */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   border-radius: 10px;
   height: 250px;
-  width: 184px;
+  width: 190px;
 }
 
 .cert-card button {
@@ -664,13 +664,6 @@ button[type="submit"] {
   .contact-container {
     margin: 0 8px;
   }
-
- /* #Contact {
-    max-width: 600px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  } */
 
   .left-div {
     display: block;
