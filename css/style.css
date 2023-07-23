@@ -120,7 +120,6 @@ button:hover {
 .portfolio-page {
   /* background: linear-gradient(180deg, #8e93c2 0%, #000000 100%); */
   background: linear-gradient(180deg, #3c3f61 0%, #e6e6e6 100%);
-  /* min-height: 100vh; */
   overflow-y: auto;
 }
 
@@ -144,7 +143,7 @@ button:hover {
   text-align: center;
   max-width: 900px;
   width: 100%;
-  padding: 70px 32px 50px 32px;
+  padding: 90px 32px 50px 32px;
 }
 
 .portfolio-text h1 {
@@ -459,7 +458,7 @@ button:hover {
   margin: 0 auto;
   text-align: center;
   max-width: 1100px;
-  padding: 80px 40px 80px 40px;
+  padding: 0px 40px 80px 40px;
 }
 
 @media (max-width: 900px) {
@@ -514,6 +513,9 @@ button:hover {
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
+  /* padding: 32px;
+    background-color: #4d5175;
+    border-radius: 20px; */
 }
 
 .contact-icon {
@@ -538,6 +540,10 @@ button:hover {
   display: flex;
   margin-bottom: 24px;
 }
+/* 
+.contact-page {
+  margin-top: 80px;
+} */
 
 /* .contact-info2 div {
   align-items: center;
@@ -558,7 +564,7 @@ button:hover {
   margin-bottom: 24px;
 }
 
-.form-title h1 {
+.form-title h2 {
   margin-bottom: 16px;
 }
 
@@ -583,6 +589,9 @@ label {
   flex: 1;
   display: block;
   text-align: left;
+  /* padding: 32px;
+  background-color: #4d5175;
+  border-radius: 20px; */
 }
 
 #div {
@@ -608,33 +617,6 @@ textarea {
   min-height: 120px;
 }
 
-/* .form-container {
-  margin-top: 20px;
-}
-
-.form-container form {
-  display: grid;
-  gap: 10px;
-}
-
-.name-inputs {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: left;
-}
-
-textarea {
-  resize: vertical;
-}
-
-button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-} */
 
 @media (max-width: 1000px) {
   .contact-container {
