@@ -54,7 +54,7 @@ body {
 button {
   background: linear-gradient(
     99.49deg,
-    #32353a 14.51%,
+    rgb(50, 53, 58, 0.5) 14.51%,
     rgba(54, 61, 82, 0.582) 77.41%
   );
   border-radius: 30px;
@@ -67,7 +67,7 @@ button {
 }
 
 button:hover {
-  background-color: #656ba1;
+  background-color: rgba(91, 96, 145);
 }
 
 .button-container button {
