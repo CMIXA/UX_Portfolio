@@ -694,8 +694,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-x: auto;
-  overflow-y: auto;
 }
 
 .ty-wrapper h2 {
