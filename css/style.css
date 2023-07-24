@@ -711,6 +711,14 @@ footer {
   margin-bottom: 32px;
 }
 
-.ty-wrapper button {
-  margin-bottom: 24px;
+@media (max-width: 500px) { 
+
+  .ty-wrapper h2 {
+    font-size: 28px;
+  }
+
+  .ty-wrapper p {
+    font-size: 16px;
+  }
+
 }
