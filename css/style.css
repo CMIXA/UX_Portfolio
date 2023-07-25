@@ -110,11 +110,9 @@ button:hover {
 }
 
 @media (max-width: 1024px) {
-
-  .nav-space{
+  .nav-space {
     height: 60px;
   }
-
 }
 
 /*  */
@@ -340,29 +338,30 @@ button:hover {
   margin-bottom: 16px;
 }
 
+.about-page {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .about-section {
-  max-width: 1200px; /* Add the max width you want for the "About" section */
   display: flex; /* To keep the divs next to each other */
   justify-content: space-between; /* To have them fill the available space */
   align-items: center; /* To vertically align them */
   padding: 80px 40px 80px 40px; /* Add some padding to create space around the content */
-  /* position: relative; */
 }
 
 .a-left-div {
   padding: 20px;
-  max-width: 55%;
+  max-width: 50%;
 }
 
 .a-right-div {
-  position: relative;
+  /* position: relative;
   overflow: hidden;
-  margin-right: -39px;
+  margin-right: -39px; */
 }
 
-
 .about-section img {
-  /* overflow: hidden; Clip the image if it overflows */
   width: 500px;
 }
 
@@ -383,20 +382,19 @@ button:hover {
   font-size: 16px;
 }
 
-
 @media (max-width: 1000px) {
-  
   .about-section {
-    display: block; 
+    display: block;
+    padding: 80px 24px 80px 24px;
   }
 
   .a-left-div {
-    padding: 40px 20px;
+    padding: 40px 0px;
     max-width: none; /* Reset the max-width to allow it to take full width */
     margin: 0px;
     display: flex;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .a-right-div {
@@ -404,15 +402,14 @@ button:hover {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-right: 0px; 
+    margin-right: 0px;
   }
-  
+
   .h-right-div .img-wrapper {
-    overflow: hidden; /* Clip the image if it overflows */
+    overflow: hidden;
   }
-  
+
   .about-section img {
-    /* overflow: hidden; Clip the image if it overflows */
     width: 500px;
   }
 
@@ -420,13 +417,19 @@ button:hover {
     margin-top: 0px;
     margin-bottom: 32px;
   }
-
 }
 
 .cert-card {
-  background-color: rgba(48, 50, 59, 0.5); /* Semi-transparent background color */
-  backdrop-filter: blur(10px); /* Background blur effect (adjust blur radius as needed) */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: rgba(
+    48,
+    50,
+    59,
+    0.5
+  ); /* Semi-transparent background color */
+  backdrop-filter: blur(
+    10px
+  ); /* Background blur effect (adjust blur radius as needed) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   height: 250px;
   width: 190px;
@@ -471,8 +474,8 @@ button:hover {
 }
 
 @media (max-width: 900px) {
-
-  .button-comp, .in-prog {
+  .button-comp,
+  .in-prog {
     margin-bottom: 24px;
   }
 
@@ -493,15 +496,12 @@ button:hover {
     height: auto;
     padding: 8px 0px 16px 0px;
   }
-
 }
 
 @media (max-width: 600px) {
-  
   .cert-card {
     width: 100%;
   }
-
 }
 
 /*  */
@@ -606,7 +606,6 @@ textarea {
   min-height: 120px;
 }
 
-
 @media (max-width: 1000px) {
   .contact-container {
     margin-bottom: 10px;
@@ -633,7 +632,7 @@ textarea {
   }
 
   .contact-container {
-    margin: 0 8px;
+    margin: 0 4px;
   }
 
   .left-div {
@@ -672,8 +671,6 @@ footer {
 
 /*  */
 
-
-
 /* TY PAGE */
 
 .ty-container {
@@ -704,8 +701,7 @@ footer {
   margin-bottom: 32px;
 }
 
-@media (max-width: 500px) { 
-
+@media (max-width: 500px) {
   .ty-wrapper h2 {
     font-size: 28px;
   }
@@ -713,5 +709,4 @@ footer {
   .ty-wrapper p {
     font-size: 16px;
   }
-
 }
