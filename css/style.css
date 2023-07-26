@@ -401,6 +401,10 @@ button:hover {
   margin-bottom: 16px;
 }
 
+.about-text p {
+  margin-bottom: 24px;
+}
+
 .about-page {
   margin: 0 auto;
   max-width: 1200px;
@@ -445,11 +449,16 @@ button:hover {
     padding: 80px 24px 80px 24px;
   }
 
+  .a-left-div button {
+    width: 50%;
+  }
+
   .a-left-div {
     padding: 40px 0px;
     max-width: none; /* Reset the max-width to allow it to take full width */
     margin: 0px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     /* text-align: center; */
   }
@@ -473,6 +482,12 @@ button:hover {
   .in-prog {
     margin-top: 0px;
     margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .a-left-div button {
+    width: 80%;
   }
 }
 
@@ -702,11 +717,9 @@ textarea {
     text-align: center;
     margin: 0 auto;
   }
-
 }
 
 @media (max-width: 500px) {
-
   .contact-image {
     display: none;
   }
@@ -715,16 +728,14 @@ textarea {
     padding-bottom: 0px;
   }
 
-
   .contact-title-phone {
     display: block;
-    margin-bottom: 24px
+    margin-bottom: 24px;
   }
 
   .form-title h2 {
     display: none;
   }
-
 }
 /*  */
 
