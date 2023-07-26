@@ -602,6 +602,10 @@ button:hover {
   margin-bottom: 24px;
 }
 
+.contact-title-phone {
+  display: none;
+}
+
 .f-name {
   margin-right: 16px;
 }
@@ -699,11 +703,29 @@ textarea {
     margin: 0 auto;
   }
 
-  /* .right-div {
-    max-width: 550px;
-  } */
 }
 
+@media (max-width: 500px) {
+
+  .contact-image {
+    display: none;
+  }
+
+  .contact-info {
+    padding-bottom: 0px;
+  }
+
+
+  .contact-title-phone {
+    display: block;
+    margin-bottom: 24px
+  }
+
+  .form-title h2 {
+    display: none;
+  }
+
+}
 /*  */
 
 /* FOOTER */

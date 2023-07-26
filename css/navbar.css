@@ -168,6 +168,10 @@
 /* Media query for hamburger menu */
 @media screen and (max-width: 900px) {
 
+  .navbar {
+    padding: 32px 24px;
+  }
+
   .navlinks {
     display: none;
   }
