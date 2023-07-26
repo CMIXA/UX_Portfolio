@@ -123,10 +123,6 @@ button:hover {
   text-align: center;
 }
 
-/* .project-container-alt {
-  height: ;
-} */
-
 .main-container-alt {
   height: 100%;
   width: 100%;
@@ -178,6 +174,26 @@ button:hover {
   color: #000000;
 }
 
+.in-prog-sub {
+  font-size: 12px;
+  width: auto;
+}
+
+.in-prog-text {
+  border-radius: 3px 3px 0 0;
+  background-color: #ffb412;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  padding: 2px 0;
+}
+
+.in-prog-text img {
+  margin-right: 4px;
+  width: 12px;
+}
 /*  */
 
 @media (max-width: 1024px) {
@@ -265,6 +281,10 @@ button:hover {
   color: #ffffff;
 }
 
+/* .text-title {
+  font-size: 28px;
+} */
+
 .square:hover .text {
   opacity: 1;
 }
@@ -332,10 +352,14 @@ button:hover {
 
 .proj-img-alt {
   border-radius: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   width: 85%;
-  /* height: 300px;
-  width: 500px; */
+  opacity: 0.5;
+  transition: opacity 0.1s ease;
+}
+
+.proj-img-alt:hover {
+  opacity: 0.75;
 }
 
 .prog-title {
@@ -359,6 +383,10 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   margin: 0 24px;
+}
+
+.ty-wrapper-alt p {
+  margin-bottom: 16px;
 }
 
 #section1,
