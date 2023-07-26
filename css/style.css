@@ -501,6 +501,7 @@ button:hover {
 }
 
 .cert-img {
+  border-radius: 4px;
   margin: 32px 0px 16px 0px;
   width: 40px;
 }
@@ -749,7 +750,7 @@ footer {
 }
 
 .ty-img {
-  width: 175px;
+  width: 130px;
   margin-bottom: 8px;
 }
 
