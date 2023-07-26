@@ -158,12 +158,6 @@
   margin: 24px;
 }
 
-/* Media query for hamburger menu */
-/* @media screen and (max-width: 768px) {
-  .login-paid {
-    display: none;
-  }
-} */
 
 /* Media query for hamburger menu */
 @media screen and (max-width: 900px) {
@@ -192,7 +186,4 @@
     margin-bottom: 0;
   }
 
-  /* .title-container h3 {
-    display: none;
-  } */
 }

@@ -401,10 +401,94 @@
       <!--  -->
     </div>
 
-    <script src="navbar.js"></script>
+    <!-- <script src="navbar.js"></script>
     <script src="script.js"></script>
-    <script src="index.js"></script>
+    <script src="index.js"></script> -->
     <!-- Google tag (gtag.js) -->
+    <style>
+      /* Your CSS code remains the same */
+    
+      /* Add a new CSS class to hide the navbar */
+      .navbar.hide {
+        transform: translateY(-100%);
+      }
+    
+      /* Media query for larger screens */
+      @media screen and (min-width: 900px) {
+        /* Show the navbar by default on larger screens */
+        .navbar {
+          transform: translateY(0);
+        }
+    
+        /* Hide the navbar when the 'hide' class is applied on larger screens */
+        .navbar.hide {
+          transform: translateY(-100%);
+        }
+      }
+    </style>
+    
+    <script>
+      let prevScrollPos = window.pageYOffset;
+      let isLargeScreen = window.matchMedia("(min-width: 900px)").matches;
+      const navbar = document.querySelector(".navbar");
+    
+      function handleScroll() {
+        const currentScrollPos = window.pageYOffset;
+    
+        if (prevScrollPos > currentScrollPos) {
+          // Scrolling up, remove the 'hide' class to show the navbar
+          navbar.classList.remove("hide");
+        } else {
+          // Scrolling down, add the 'hide' class to hide the navbar
+          navbar.classList.add("hide");
+        }
+    
+        prevScrollPos = currentScrollPos;
+      }
+    
+      function handleWindowSizeChange(e) {
+        isLargeScreen = e.matches;
+    
+        if (isLargeScreen) {
+          // Add the event listener for larger screens
+          window.addEventListener("scroll", handleScroll);
+          // Show the navbar when switching from smaller to larger screen
+          navbar.classList.remove("hide");
+        } else {
+          // Remove the event listener for smaller screens
+          window.removeEventListener("scroll", handleScroll);
+          // Show the navbar on smaller screens
+          navbar.classList.remove("hide");
+        }
+      }
+    
+      // Initial check for window size and add event listener if needed
+      const initialMediaQuery = window.matchMedia("(min-width: 900px)");
+      initialMediaQuery.addListener(handleWindowSizeChange);
+      handleWindowSizeChange(initialMediaQuery);
+    
+      const hamburgerMenu = document.getElementById('hamburgerMenu');
+      const dropdownMenu = document.getElementById('dropdownMenu');
+    
+      hamburgerMenu.addEventListener('click', () => {
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+      });
+    
+      // Event listener to close the dropdown menu when clicking outside of it
+      document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (target !== dropdownMenu && target !== hamburgerMenu) {
+          dropdownMenu.style.display = 'none';
+        }
+      });
+    
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-QP78FGZ9BZ"
@@ -418,6 +502,5 @@
 
       gtag("config", "G-QP78FGZ9BZ");
     </script>
-    <!-- <script src="navbar.js"></script> -->
   </body>
 </html>
