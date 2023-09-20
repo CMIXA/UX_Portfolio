@@ -446,7 +446,7 @@ button:hover {
 @media (max-width: 1000px) {
   .about-section {
     display: block;
-    padding: 80px 24px 80px 24px;
+    padding: 20px 24px 80px 24px;
   }
 
   .a-left-div button {
@@ -569,6 +569,11 @@ button:hover {
     height: auto;
     padding: 8px 0px 16px 0px;
   }
+
+  .certs-section {
+    padding: 0px 40px 80px 40px;
+  }
+  
 }
 
 @media (max-width: 600px) {
@@ -593,9 +598,6 @@ button:hover {
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
-  /* padding: 32px;
-    background-color: #4d5175;
-    border-radius: 20px; */
 }
 
 .contact-icon {
