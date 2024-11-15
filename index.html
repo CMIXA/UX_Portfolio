@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="SA Circle Logo (2) copy.png"
+    /> -->
+
     <link rel="icon" type="image/png" sizes="32x32" href="images/CM1 Fav.png" />
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" /> -->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +30,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
 
-    <title>Chris Mixa</title>
+    <title>Automa Solutions</title>
   </head>
 
   <body>
@@ -33,28 +44,24 @@
               href="#Home"
               onclick="scrollToSection('#Home')"
             >
-              <h1 class="title">Chris Mixa</h1>
+              <img
+                src="images/SA Circle Logo (2).png"
+                alt="Automa Solutions Logo"
+              />
+              <h1 class="title">Automa Solutions</h1>
             </a>
           </div>
           <ul class="navlinks">
             <li class="navbar-item">
-              <a href="#Home" onclick="scrollToSection('#Home')">Home</a>
+              <a href="#Solutions" onclick="scrollToSection('#Solutions')"
+                >Solutions</a
+              >
             </li>
             <li class="navbar-item">
-              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')"
-                >Portfolio</a
-              >
+              <a href="#OP" onclick="scrollToSection('#OP')">How it works</a>
             </li>
             <li class="navbar-item">
               <a href="#About" onclick="scrollToSection('#About')">About</a>
-            </li>
-            <li class="navbar-item">
-              <a
-                href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
-                target="_blank"
-              >
-                Resume
-              </a>
             </li>
           </ul>
           <div class="hamburger-menu" id="hamburgerMenu">
@@ -63,15 +70,25 @@
             <div class="hamburger-menu-line"></div>
           </div>
           <div class="login-paid">
-            <a href="https://github.com/CMIXA" target="_blank">
-              <img class="social-media" src="images/github-W.png" />
-            </a>
-            <a
+            <!-- <a
+              href="https://www.instagram.com/automa_solutions/"
+              target="_blank"
+            >
+              <img class="social-media" src="images/Instagram_icon.png.webp" />
+            </a> -->
+            <!-- <a
               id="right-link"
-              href="https://www.linkedin.com/in/christopher-mixa/"
+              href="https://linktr.ee/automa.solutions"
               target="/blank"
             >
-              <img class="social-media" src="images/linkedin-W.png" />
+              <img class="social-media" src="images/linktree-logo-icon.webp" />
+            </a> -->
+            <a
+              id="right-link"
+              href="https://www.fiverr.com/cmixa8/build-you-an-ai-chatbot"
+              target="/blank"
+            >
+              <img class="social-media" src="images/fiverr2.png" />
             </a>
             <a
               class="contact-button"
@@ -79,33 +96,26 @@
               href="#Contact"
               onclick="scrollToSection('#Contact')"
             >
-              <button>Contact me</button>
+              <button>Contact us</button>
             </a>
           </div>
         </div>
         <div class="dropdown-menu" id="dropdownMenu">
           <ul class="navlinks-dropdown">
             <li class="navbar-item">
-              <a href="#Home" onclick="scrollToSection('#Home')">Home</a>
+              <a href="#Solutions" onclick="scrollToSection('#Solutions')"
+                >Solutions</a
+              >
             </li>
             <li class="navbar-item">
-              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')"
-                >Portfolio</a
-              >
+              <a href="#OP" onclick="scrollToSection('#OP')">How it works</a>
             </li>
             <li class="navbar-item">
               <a href="#About" onclick="scrollToSection('#About')">About</a>
             </li>
             <li class="navbar-item">
               <a href="#Contact" onclick="scrollToSection('#Contact')"
-                >Contact</a
-              >
-            </li>
-            <li class="navbar-item">
-              <a
-                href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
-                target="_blank"
-                >Resume</a
+                >Contact us</a
               >
             </li>
           </ul>
@@ -114,120 +124,290 @@
       <!--  -->
 
       <!-- HOME SECTION -->
-      <section id="Home">
+      <section class="home" id="Home">
         <div class="nav-space"></div>
         <div class="home-section">
           <div class="h-left-div">
-            <h1>Hi, I'm Chris</h1>
-            <h1>UI/UX Designer & Dev</h1>
+            <div class="h-left-div-title">
+              <h1>Optimize your work</h1>
+              <h1>with our Custom AI Solutions</h1>
+            </div>
             <p>
-              Passionate about solving tech’s new challenges and creating
-              effortless experiences
+              Enhance productivity and streamline operations with our advanced
+              AI solutions tailored for you
             </p>
             <div class="button-container">
-              <a href="#About" onclick="scrollToSection('#About')">
-                <button>Learn more about me</button>
+              <a href="#Solutions" onclick="scrollToSection('#Solutions')">
+                <button class="button-link">
+                  Explore our Solutions
+                  <img class="button-img-mag" src="images/Bolt2.png" />
+                </button>
               </a>
-              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')">
-                <button>Check out my work</button>
+              <a href="#OP" onclick="scrollToSection('#OP')">
+                <button class="button-link">
+                  How it Works
+                  <img class="button-img" src="images/repair 1 (1).png" />
+                </button>
+              </a>
+            </div>
+            <div class="button-container">
+              <a
+                href="https://calendly.com/chris-automasolutions/30min"
+                target="_blank"
+              >
+                <button class="button-link">
+                  Schedule a Free Consultation
+                  <img class="button-img" src="images/shines 4.png" />
+                </button>
               </a>
             </div>
           </div>
           <div class="h-right-div">
-            <img src="images/me4.png" />
+            <img src="images/Group 501 (5).png" />
           </div>
         </div>
       </section>
       <!--  -->
 
-      <!-- PROJECTS SECTION -->
-      <section class="portfolio-page" id="Portfolio">
-        <div class="portfolio-container">
-          <div class="portfolio-text">
-            <h2>My Portfolio</h2>
+      <!-- Mission SECTION -->
+      <section class="mission-page" id="mission">
+        <div class="mission-container">
+          <div class="mission-content">
+            <div class="mission-title">
+              <img
+                src="images/SA Circle Logo (2).png"
+                alt="Simula Automations Logo"
+              />
+              <h2>Our Mission</h2>
+            </div>
+            <div class="mission-text">
+              <p>
+                At Automa Solutions, our mission is to empower small businesses,
+                aspiring entrepreneurs, and talented individuals by providing
+                the best solutions through custom-tailored guidance from AI. We
+                are dedicated to fostering growth and innovation, enabling our
+                clients to build and enhance their work with the support of
+                advanced, personalized AI-driven insights and tools. Our
+                commitment is to deliver exceptional, customized solutions that
+                drive success and transform visions into reality.
+              </p>
+              <a href="#About" onclick="scrollToSection('#About')">
+                <button>Learn more about us</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+
+      <!-- SOLUTIONS SECTION -->
+      <section class="solutions-page" id="Solutions">
+        <div class="solutions-container">
+          <div class="solutions-text">
+            <div class="solutions-title">
+              <!-- <img
+                src="images/SA Circle Logo (2).png"
+                alt="Simula Automations Logo"
+              /> -->
+              <h2>Our Solutions</h2>
+              <img
+                src="images/SA Circle Solutions.png"
+                alt="dots"
+                class="solutions-logo"
+              />
+            </div>
             <p>
-              Discover a Diverse Collection of UX/UI Projects in My Portfolio.
-              From elegant user interfaces to captivating user experiences,
-              explore the innovative solutions I've crafted to make digital
-              interactions intuitive and simple to use.
+              Explore our innovative solutions designed to enhance digital
+              interactions and streamline your business processes. This section
+              showcases the current offerings from Automa Solutions.
             </p>
           </div>
-          <div class="portfolio-projects">
-            <div class="portfolio-projects-row">
-              <div class="square-container">
-                <a href="project1.html">
-                  <div class="square" id="sc-omni">
-                    <div class="text">
-                      <p>Omni Health App</p>
-                      <p>UX Case Study</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="square-container">
-                <a href="project2.html">
-                  <div class="square" id="sc-joi">
-                    <div class="text">
-                      <p class="text-title">Joi Generative AI</p>
-                      <p>In-Progress</p>
-                    </div>
-                    <div class="in-prog-text">
-                      <img src="images/support.png" alt="" />
-                      <p class="in-prog-sub">In-Progress</p>
-                    </div>
-                  </div>
-                </a>
+          <div class="gpt-section">
+            <div class="gpt-left-div">
+              <div class="gpt-text">
+                <div class="gpt-title">
+                  <!-- <h3 class="gpt-sale">***SUMMER SALE - 50% OFF***</h3> -->
+                  <h3>AI Chatbot - External AI Assistant</h3>
+                  <h3 class="gpt-price">
+                    Price Starting at - <s>$1000 </s> $250
+                  </h3>
+                </div>
+                <p>
+                  Unlock the potential of AI for your business with a
+                  custom-built AI chatbot tailored to your specific needs. This
+                  chatbot works tirelessly around the clock on your website,
+                  ready to engage customers, capture leads, assist with
+                  inquiries, and drive conversions—all with a personal touch
+                  that enhances customer satisfaction. Designed to adapt
+                  seamlessly to your brand's voice and goals, this chatbot is an
+                  essential tool for businesses aiming to improve customer
+                  engagement, boost sales, and operate efficiently 24/7.
+                </p>
+                <!-- <p>
+                  Acting as a virtual team member, it streamlines customer
+                  interactions, promotes products, captures valuable leads, and
+                  provides immediate, helpful responses. Designed to adapt
+                  seamlessly to your brand's voice and goals, this chatbot is an
+                  essential tool for businesses aiming to improve customer
+                  engagement, boost sales, and operate efficiently 24/7.
+                </p> -->
+                <div class="button-container">
+                  <a
+                    href="https://calendly.com/chris-automasolutions/30min"
+                    target="_blank"
+                  >
+                    <button class="button-link">
+                      Schedule a Free Consultation
+                      <img class="button-img" src="images/shines 4.png" />
+                    </button>
+                  </a>
+                  <a
+                    href="https://www.fiverr.com/cmixa8/build-you-an-ai-chatbot"
+                    target="/blank"
+                  >
+                    <button class="button-link-purchase">
+                      See Listing
+                      <!-- <img
+                        class="button-img"
+                        src="images/right-arrow (5) 1 (1).png"
+                      /> -->
+                      <!-- <img class="button-img" src="images/gear (6) 1.png" /> -->
+                      <!-- <img class="button-img" src="images/check (12).png" /> -->
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
-            <!--  -->
-            <div class="portfolio-projects-row">
-              <div class="square-container">
-                <a href="project3.html">
-                  <div class="square" id="sc-mo">
-                    <div class="text">
-                      <p>Mixa Orthopedics</p>
-                      <p>UX Case Study</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="square-container">
-                <a href="project4.html">
-                  <div class="square" id="sc-vrl">
-                    <div class="text">
-                      <p>VR Live</p>
-                      <p>UX Case Study</p>
-                    </div>
-                  </div>
-                </a>
+            <div class="gpt-right-div">
+              <!-- <div class="gpt-title-2">
+                <h3>(SUMMER SALE 50% off)</h3>
+                <h3>Custom GPT / Personal AI Assistant</h3>
+                <h3 class="gpt-price">Price - <s>$100</s> $50</h3>
+              </div> -->
+              <div class="gpt-img-wrapper">
+                <img src="images/3ChatsT.png" alt="" />
               </div>
             </div>
-            <!--  -->
-            <div class="portfolio-projects-row">
-              <div class="square-container">
-                <a href="project5.html">
-                  <div class="square" id="sc-ii">
-                    <div class="text">
-                      <p>Immersive Insights</p>
-                      <p>UI Project</p>
-                    </div>
-                  </div>
-                </a>
+          </div>
+          <!-- <div class="gpt-section-2">
+            <img src="images/capabilities (3).png" alt="" />
+          </div> -->
+          <!-- <div>
+            <img src="" alt="">
+          </div> -->
+          <div class="gpt-section-3">
+            <div class="capability-text">
+              <div class="capability-title">
+                <!-- <img
+                  src="images/SA Circle Logo (2).png"
+                  alt="Simula Automations Logo"
+                /> -->
+                <h2>Empower Your Business with an AI Assistant</h2>
+                <img
+                  src="images/lightning 1.png"
+                  alt="dots"
+                  class="solutions-logo"
+                />
               </div>
-              <div class="square-container">
-                <a href="project6.html">
-                  <div class="square" id="sc-pm8">
-                    <div class="text">
-                      <p>Project M8</p>
-                      <p>In-Progress</p>
-                    </div>
-                    <div class="in-prog-text">
-                      <img src="images/support.png" alt="" />
-                      <p class="in-prog-sub">In-Progress</p>
-                    </div>
-                  </div>
-                </a>
+              <div>
+                <p>
+                  Experience the benefits of AI-driven interactions that elevate
+                  customer service, streamline operations, and enhance
+                  scalability. With 24/7 availability, personalized branding,
+                  and advanced support capabilities, an AI assistant is your key
+                  to meeting customer expectations while optimizing business
+                  efficiency.
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="op-container">
+          <div class="capability-img-wrapper">
+            <div class="capability-img">
+              <img src="images/6 block (2).png" alt="instagram logo" />
+            </div>
+            <div class="capability-img-sm">
+              <img src="images/6 block sm.png" alt="instagram logo" />
+            </div>
+            <div class="capability-img-smlr">
+              <img src="images/6 block smlr.png" alt="instagram logo" />
+            </div>
+            <!-- <div class="our-process-sm">
+              <img src="images/ourProcess-sm.png" alt="instagram logo" />
+            </div> -->
+            <!-- <p>
+              Get the latest developments and updates from our services. Follow
+              us also for tips and tricks for AI!
+            </p> -->
+            <!-- <div class="button-container-2">
+              <a href="https://calendly.com/cmixa8/45min" target="_blank">
+                <button class="button-link">
+                  Schedule a Free Consultation
+                  <img class="button-img" src="images/shines 4.png" />
+                </button>
+              </a>
+            </div> -->
+          </div>
+        </div>
+        <div class="op-container">
+          <div class="op-text">
+            <div class="listing-title">
+              <h2>View our listing page on</h2>
+              <img src="images/fiverr8.png" alt="build" />
+            </div>
+            <div class="gig-process">
+              <a
+                href="https://www.fiverr.com/cmixa8/build-you-an-ai-chatbot"
+                target="/blank"
+              >
+                <img src="images/ExternalGig2.png" alt="Fiverr Listing" />
+              </a>
+            </div>
+            <div class="button-container-2">
+              <a
+                href="https://www.fiverr.com/cmixa8/build-you-an-ai-chatbot"
+                target="_blank"
+              >
+                <button class="button-link-listing">
+                  View Listing Page
+                  <img class="button-img" src="images/right-arrow (5).png" />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+
+      <!-- OUR PROCESS SECTION -->
+      <section class="op-page" id="OP">
+        <div class="op-container">
+          <div class="op-text">
+            <div class="op-title">
+              <h2>How it Works</h2>
+              <img src="images/repair 1 (1).png" alt="build" />
+            </div>
+            <div class="our-process">
+              <img src="images/process (10).png" alt="instagram logo" />
+            </div>
+            <div class="our-process-sm">
+              <img src="images/ourProcess-sm.png" alt="instagram logo" />
+            </div>
+            <!-- <p>
+              Get the latest developments and updates from our services. Follow
+              us also for tips and tricks for AI!
+            </p> -->
+            <div class="button-container-2">
+              <a
+                href="https://calendly.com/chris-automasolutions/30min"
+                target="_blank"
+              >
+                <button class="button-link">
+                  Schedule a Free Consultation
+                  <img class="button-img" src="images/shines 4.png" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -239,18 +419,23 @@
         <div class="about-section">
           <div class="a-left-div">
             <div class="about-text">
-              <h2 class="about-title">About me</h2>
+              <div class="about-title">
+                <h2>About Us</h2>
+                <img src="images/gear (6) 1.png" alt="" />
+              </div>
               <p>
-                I'm a self-taught UX/UI designer and software developer, driven
-                by an insatiable curiosity for new and emerging technologies
-                like Artificial Intelligence, Blockchain, and XR. With a passion
-                for crafting seamless user experiences, I delve into the world
-                of design and front-end development. Through my portfolio
-                website, I invite you to explore a fusion of innovation and
-                creativity, where every project is a canvas for problem-solving
-                and user-centric solutions. Join me on this journey as I strive
-                to shape the future with cutting-edge tech and intuitive designs
-                that leave a lasting impact.
+                Automa Solutions is a cutting-edge company dedicated to
+                developing and optimizing AI-driven solutions for businesses,
+                entrepreneurs, and individuals. AS's primary focus is on
+                creating advanced chatbots and AI assistants/agents that
+                increase productivity, enhance customer engagement, streamline
+                operations, and drive business growth. Automa Solutions is
+                committed to leveraging advanced AI technologies to empower all,
+                providing robust, intelligent solutions that automate processes,
+                offer insightful analysis, and facilitate seamless
+                communication. Through continuous innovation, AS aims to be a
+                leader in the AI solutions industry, helping those unlock their
+                full potential through intelligent automation and assistance.
               </p>
               <!-- <button>Check out my resume</button> -->
             </div>
@@ -258,65 +443,88 @@
               href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
               target="_blank"
             >
-              <button>Check out my resume</button>
+              <!-- <button>Check out my resume</button> -->
             </a>
           </div>
           <div class="a-right-div">
-            <div class="img-wrapper">
-              <img src="images/Group 18 (2).png" alt="" />
+            <div class="a-img-wrapper">
+              <img src="images/AS About Banner (1).png" alt="" />
             </div>
           </div>
         </div>
         <div class="certs-section">
           <div class="cert-title">
-            <h2>Certifications & Courses</h2>
+            <h2>Meet Our Team</h2>
+            <img src="images/shines 4.png" alt="" />
           </div>
           <div class="cert-card-container">
             <div class="cert-card">
-              <img class="cert-img" src="images/google (1).png" alt="" />
-              <p class="cert-plat">Coursera</p>
-              <p class="cert-name">Google UX Design Professional Certificate</p>
-              <a
-                href="https://www.coursera.org/account/accomplishments/professional-cert/R77BV9WGPHP3?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=prof"
-                target="_blank"
-              >
-                <button class="button-comp">See Certification</button>
+              <img class="cert-img" src="images/cmixa1.png" alt="Chris Mixa" />
+              <p class="cert-plat">Chris Mixa | Founder</p>
+              <p class="cert-name">
+                AI Specialist, CX, Business, and Tech Professional
+              </p>
+              <a href="https://linktr.ee/cmixa" target="_blank">
+                <button class="button-comp">Conect with me!</button>
               </a>
+              <!-- <a
+                id="right-link"
+                href="https://www.linkedin.com/in/christopher-mixa/"
+                target="/blank"
+              >
+                <img class="social-media" src="images/linkedin-W.png" />
+              </a> -->
             </div>
             <div class="cert-card">
-              <img class="cert-img" src="images/code.png" alt="" />
-              <p class="cert-plat">Udemy</p>
-              <p class="cert-name">2022 Web Development Bootcamp</p>
+              <img class="cert-img" src="images/Aiva Logo.png" alt="Aiva" />
+              <p class="cert-plat">Aiva | AI Assistant</p>
+              <p class="cert-name">
+                Automa Solutions' Internal and External Assistant
+              </p>
               <a
                 href="https://www.udemy.com/certificate/UC-8e533edb-2969-4518-830e-280d330ef5ca/"
                 target="_blank"
               >
-                <button class="button-comp">See Certification</button>
+                <!-- <button class="button-comp">Chat with Aiva</button> -->
               </a>
-            </div>
-            <div class="cert-card">
-              <img class="cert-img" src="images/python.png" alt="" />
-              <p class="cert-plat">Udemy</p>
-              <p class="cert-name">2021 Complete Python Bootcamp</p>
-              <a
-                href="https://www.udemy.com/certificate/UC-91d6b0c4-571d-40bd-ad09-ca62d7490f73/"
-                target="_blank"
-              >
-                <button class="button-comp">See Certification</button>
-              </a>
-            </div>
-            <div class="cert-card">
-              <img class="cert-img" src="images/duke.jpeg" alt="" />
-              <p class="cert-plat">Coursera</p>
-              <p class="cert-name">Duke Univeristy AI Product Management</p>
-              <div class="in-prog">
-                <img class="in-prog-img" src="images/clock.png" alt="" />
-                <p>In-Progress</p>
-              </div>
             </div>
           </div>
         </div>
       </section>
+      <!--  -->
+
+      <!-- INSTA SECTION -->
+      <!-- <section class="insta-page" id="insta">
+        <div class="insta-container">
+          <div class="insta-text">
+            <div class="insta-logo">
+              <img
+                src="images/Instagram_icon.png.webp  "
+                alt="instagram logo"
+              />
+            </div>
+            <h2>Follow us on Instagram!</h2>
+            <p>
+              Get the latest developments and updates from our services. Follow
+              us for tips and tricks for AI!
+            </p>
+            <div class="button-container-2">
+              <a
+                href="https://www.instagram.com/automa_solutions/"
+                target="_blank"
+              >
+                <button class="button-link">
+                  Check out our instagram page
+                  <img
+                    class="button-img"
+                    src="images/right-arrow (5) 1 (1).png"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> -->
       <!--  -->
 
       <!-- CONTACT SECTION -->
@@ -324,17 +532,17 @@
         <div class="contact-container">
           <div class="contact-page">
             <div class="contact-form-container">
-              <h2 class="contact-title-phone">Contact me</h2>
+              <h2 class="contact-title-phone">Contact Us</h2>
               <div class="left-div">
                 <img
                   class="contact-image"
-                  src="images/cm1.png"
+                  src="images/SA Circle Logo (2).png"
                   alt="initials"
                 />
                 <div class="contact-info">
                   <div>
                     <img class="contact-icon" src="images/email.png" />
-                    <p>cmixa8@gmail.com</p>
+                    <p>chris@automasolutions.com</p>
                   </div>
                   <div>
                     <img class="contact-icon" src="images/phone.png" />
@@ -342,20 +550,20 @@
                   </div>
                   <div>
                     <img class="contact-icon" src="images/location.png" />
-                    <p>St. Petersburg, FL</p>
+                    <p>Chicago, IL, USA</p>
                   </div>
                 </div>
               </div>
               <div class="right-div">
                 <div class="form-title">
-                  <h2>Contact me</h2>
+                  <h2>Contact Us</h2>
                   <p>
-                    Don't hesitate to connect with me. I look forward to hearing
-                    from you and exploring opportunities to work together!
+                    Feel free to reach out with any questions or inquires. We’re
+                    excited to connect and collaborate with you!
                   </p>
                 </div>
                 <form
-                  action="https://formsubmit.co/cmixa8@gmail.com"
+                  action="https://formsubmit.co/chris@automasolutions.com"
                   method="POST"
                   target="_blank"
                 >
@@ -380,9 +588,9 @@
                   <input
                     type="hidden"
                     name="_next"
-                    value="https://cmixa.github.io/UX_Portfolio/thankyou.html"
+                    value="https://automasolutions.com/thankyou.html"
                   />
-                  <input type="hidden" name="_captcha" value="false" />
+                  <!-- <input type="hidden" name="_captcha" value="false" /> -->
                   <button type="submit">Send</button>
                 </form>
               </div>
@@ -392,9 +600,7 @@
       </section>
       <footer>
         <div class="footer-container">
-          <p class="footer-text">
-            Chris Mixa's Porfolio | Developed by CM on Github
-          </p>
+          <p class="footer-text">©2024 Automa Solutions. Developed on Github</p>
           <img src="images/github-W.png" alt="" />
         </div>
       </footer>
@@ -503,5 +709,462 @@
 
       gtag("config", "G-QP78FGZ9BZ");
     </script>
+
+    <script>
+      function showContent(selected) {
+        // Get all boxes and contents
+        const boxes = document.querySelectorAll(".box");
+        const contents = document.querySelectorAll(".content");
+
+        // Remove active class from all boxes and hide all content
+        boxes.forEach((box) => box.classList.remove("active"));
+        contents.forEach((content) => content.classList.remove("active"));
+
+        // Add active class to the selected box and show the corresponding content
+        document.getElementById(selected + "Box").classList.add("active");
+        document.getElementById(selected + "Content").classList.add("active");
+      }
+    </script>
+
+    <!-- Aiva External -->
+    <script>
+      const FormExtension = {
+        name: "Forms",
+        type: "response",
+        match: ({ trace }) =>
+          trace.type === "Custom_Form" || trace.payload.name === "Custom_Form",
+        render: ({ trace, element }) => {
+          const formContainer = document.createElement("form");
+
+          formContainer.innerHTML = `
+            <style>
+              label {
+                font-size: 0.8em;
+                color: #888;
+              }
+              input[type="text"], input[type="email"], input[type="tel"], textarea {
+                width: 100%;
+                border: none;
+                border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+                background: transparent;
+                margin: 5px 0;
+                outline: none;
+                padding: 8px 0; /* Added some padding for better UX */
+              }
+              .phone {
+                width: 150px;
+              }
+              .invalid {
+                border-color: red;
+              }
+              .submit {
+                background: linear-gradient(to right, #2e6ee1, #2e7ff1);
+                border: none;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                width: 100%;
+                cursor: pointer;
+              }
+            </style>
+      
+            <label for="name">Full Name</label>
+            <input type="text" class="name" name="name" required><br><br>
+      
+            <label for="email">Email</label>
+            <input type="email" class="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" title="Invalid email address"><br><br>
+      
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="phone" name="phone" required pattern="(\\d{10})|(\\d{3}-\\d{3}-\\d{4})" title="Invalid phone number, please enter 10 digits or format xxx-xxx-xxxx"><br><br>
+    
+            <label for="message">Your Message</label>
+            <textarea class="message" name="message" required></textarea><br><br>
+      
+            <input type="submit" class="submit" value="Submit">
+          `;
+
+          formContainer.addEventListener("input", function () {
+            // Remove 'invalid' class when input becomes valid
+            const name = formContainer.querySelector(".name");
+            const email = formContainer.querySelector(".email");
+            const phone = formContainer.querySelector(".phone");
+            const message = formContainer.querySelector(".message");
+
+            if (name.checkValidity()) name.classList.remove("invalid");
+            if (email.checkValidity()) email.classList.remove("invalid");
+            if (phone.checkValidity()) phone.classList.remove("invalid");
+            if (message.checkValidity()) message.classList.remove("invalid");
+          });
+
+          formContainer.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = formContainer.querySelector(".name");
+            const email = formContainer.querySelector(".email");
+            const phone = formContainer.querySelector(".phone");
+            const message = formContainer.querySelector(".message");
+
+            if (
+              !name.checkValidity() ||
+              !email.checkValidity() ||
+              !phone.checkValidity() ||
+              !message.checkValidity()
+            ) {
+              name.classList.add("invalid");
+              email.classList.add("invalid");
+              phone.classList.add("invalid");
+              message.classList.add("invalid");
+              return;
+            }
+
+            formContainer.querySelector(".submit").remove();
+
+            // HubSpot form submission logic
+            fetch(
+              "https://api.hsforms.com/submissions/v3/integration/submit/YOUR_PORTAL_ID/YOUR_FORM_ID",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  fields: [
+                    {
+                      name: "firstname",
+                      value: name.value,
+                    },
+                    {
+                      name: "email",
+                      value: email.value,
+                    },
+                    {
+                      name: "phone",
+                      value: phone.value,
+                    },
+                    {
+                      name: "message",
+                      value: message.value,
+                    },
+                  ],
+                }),
+              }
+            )
+              .then((response) => response.json())
+              .then((data) => {
+                console.log("Success:", data);
+              })
+              .catch((error) => {
+                console.error("Error:", error);
+              });
+
+            window.voiceflow.chat.interact({
+              type: "complete",
+              payload: {
+                name: name.value,
+                email: email.value,
+                phone: phone.value,
+                message: message.value,
+              },
+            });
+          });
+
+          element.appendChild(formContainer);
+        },
+      };
+    </script>
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat
+            .load({
+              verify: { projectID: "668afcb89248f8aba36528b2" },
+              url: "https://general-runtime.voiceflow.com",
+              versionID: "production",
+              assistant: {
+                extensions: [FormExtension],
+              },
+            })
+            .then(() => {
+              window.voiceflow.chat.proactive.clear(); // clear all previous messages
+              window.voiceflow.chat.proactive.push(
+                {
+                  type: "text",
+                  payload: {
+                    message: "Aiva here! Automa Solutions AI Assistant😊⚙️",
+                  },
+                },
+                {
+                  type: "text",
+                  payload: { message: "Click on the widget to open a chat!" },
+                }
+              );
+            });
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
+    </script>
+
+    <!-- <script>
+      const FormExtension = {
+        name: "Forms",
+        type: "response",
+        match: ({ trace }) =>
+          trace.type === "Custom_Form" || trace.payload.name === "Custom_Form",
+        render: ({ trace, element }) => {
+          const formContainer = document.createElement("form");
+
+          formContainer.innerHTML = `
+            <style>
+              label {
+                font-size: 0.8em;
+                color: #888;
+              }
+              input[type="text"], input[type="email"], input[type="tel"] {
+                width: 100%;
+                border: none;
+                border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+                background: transparent;
+                margin: 5px 0;
+                outline: none;
+                padding: 8px 0; /* Added some padding for better UX */
+              }
+              .phone {
+                width: 150px;
+              }
+              .invalid {
+                border-color: red;
+              }
+              .submit {
+                background: linear-gradient(to right, #2e6ee1, #2e7ff1);
+                border: none;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                width: 100%;
+                cursor: pointer;
+              }
+            </style>
+      
+            <label for="name">Full Name</label>
+            <input type="text" class="name" name="name" required><br><br>
+      
+            <label for="email">Email</label>
+            <input type="email" class="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" title="Invalid email address"><br><br>
+      
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="phone" name="phone" required pattern="(\\d{10})|(\\d{3}-\\d{3}-\\d{4})" title="Invalid phone number, please enter 10 digits or format xxx-xxx-xxxx"><br><br>
+      
+            <input type="submit" class="submit" value="Submit">
+          `;
+
+          formContainer.addEventListener("input", function () {
+            // Remove 'invalid' class when input becomes valid
+            const name = formContainer.querySelector(".name");
+            const email = formContainer.querySelector(".email");
+            const phone = formContainer.querySelector(".phone");
+
+            if (name.checkValidity()) name.classList.remove("invalid");
+            if (email.checkValidity()) email.classList.remove("invalid");
+            if (phone.checkValidity()) phone.classList.remove("invalid");
+          });
+
+          formContainer.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = formContainer.querySelector(".name");
+            const email = formContainer.querySelector(".email");
+            const phone = formContainer.querySelector(".phone");
+
+            if (
+              !name.checkValidity() ||
+              !email.checkValidity() ||
+              !phone.checkValidity()
+            ) {
+              name.classList.add("invalid");
+              email.classList.add("invalid");
+              phone.classList.add("invalid");
+              return;
+            }
+
+            formContainer.querySelector(".submit").remove();
+
+            window.voiceflow.chat.interact({
+              type: "complete",
+              payload: {
+                name: name.value,
+                email: email.value,
+                phone: phone.value,
+              },
+            });
+          });
+
+          element.appendChild(formContainer);
+        },
+      };
+    </script>
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat
+            .load({
+              verify: { projectID: "668afcb89248f8aba36528b2" },
+              url: "https://general-runtime.voiceflow.com",
+              versionID: "production",
+              assistant: {
+                extensions: [FormExtension],
+              },
+            })
+            .then(() => {
+              window.voiceflow.chat.proactive.clear(); // clear all previous messages
+              window.voiceflow.chat.proactive.push(
+                {
+                  type: "text",
+                  payload: {
+                    message: "Aiva here! Automa Solutions AI Assistant😊⚙️",
+                  },
+                },
+                {
+                  type: "text",
+                  payload: { message: "Click on the widget to open a chat!" },
+                }
+              );
+            });
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
+    </script> -->
+
+    <!-- <script>
+      const FormExtension = {
+        name: "Forms",
+        type: "response",
+        match: ({ trace }) =>
+          trace.type === "Custom_Form" || trace.payload.name === "Custom_Form",
+        render: ({ trace, element }) => {
+          const formContainer = document.createElement("form");
+
+          formContainer.innerHTML = `
+            <style>
+              label {
+                font-size: 0.8em;
+                color: #888;
+              }
+              input[type="text"], input[type="email"], input[type="tel"] {
+                width: 100%;
+                border: none;
+                border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+                background: transparent;
+                margin: 5px 0;
+                outline: none;
+                padding: 8px 0; /* Added some padding for better UX */
+              }
+              .phone {
+                width: 150px;
+              }
+              .invalid {
+                border-color: red;
+              }
+              .submit {
+                background: linear-gradient(to right, #2e6ee1, #2e7ff1);
+                border: none;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                width: 100%;
+                cursor: pointer;
+              }
+            </style>
+      
+            <label for="name">Full Name</label>
+            <input type="text" class="name" name="name" required><br><br>
+      
+            <label for="email">Email</label>
+            <input type="email" class="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" title="Invalid email address"><br><br>
+      
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="phone" name="phone" required pattern="(\\d{10})|(\\d{3}-\\d{3}-\\d{4})" title="Invalid phone number, please enter 10 digits or format xxx-xxx-xxxx"><br><br>
+      
+            <input type="submit" class="submit" value="Submit">
+          `;
+
+          formContainer.addEventListener("input", function () {
+            // Remove 'invalid' class when input becomes valid
+            const name = formContainer.querySelector(".name");
+            const email = formContainer.querySelector(".email");
+            const phone = formContainer.querySelector(".phone");
+
+            if (name.checkValidity()) name.classList.remove("invalid");
+            if (email.checkValidity()) email.classList.remove("invalid");
+            if (phone.checkValidity()) phone.classList.remove("invalid");
+          });
+
+          formContainer.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = formContainer.querySelector(".name");
+            const email = formContainer.querySelector(".email");
+            const phone = formContainer.querySelector(".phone");
+
+            if (
+              !name.checkValidity() ||
+              !email.checkValidity() ||
+              !phone.checkValidity()
+            ) {
+              name.classList.add("invalid");
+              email.classList.add("invalid");
+              phone.classList.add("invalid");
+              return;
+            }
+
+            formContainer.querySelector(".submit").remove();
+
+            window.voiceflow.chat.interact({
+              type: "complete",
+              payload: {
+                name: name.value,
+                email: email.value,
+                phone: phone.value,
+              },
+            });
+          });
+
+          element.appendChild(formContainer);
+        },
+      };
+    </script>
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat
+            .load({
+              verify: { projectID: "668afcb89248f8aba36528b2" },
+              url: "https://general-runtime.voiceflow.com",
+              versionID: "production",
+              assistant: {
+                extensions: [FormExtension],
+              },
+            })
+            .then(() => {
+              setTimeout(() => {
+                window.voiceflow.chat.open();
+              }, 1000);
+            });
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
+    </script> -->
+    <!--  -->
   </body>
 </html>
