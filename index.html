@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/CM1 Fav.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <title>Chris Mixa</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- NAVBAR -->
+      <nav class="nav">
+        <div class="navbar">
+          <div>
+            <a
+              class="title-container"
+              href="#Home"
+              onclick="scrollToSection('#Home')"
+            >
+              <h1 class="title">Chris Mixa</h1>
+            </a>
+          </div>
+          <ul class="navlinks">
+            <li class="navbar-item">
+              <a href="#Home" onclick="scrollToSection('#Home')">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="#About" onclick="scrollToSection('#About')">About</a>
+            </li>
+            <li class="navbar-item">
+              <a
+                href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
+                target="_blank"
+              >
+                Resume
+              </a>
+            </li>
+          </ul>
+          <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="hamburger-menu-line"></div>
+            <div class="hamburger-menu-line"></div>
+            <div class="hamburger-menu-line"></div>
+          </div>
+          <div class="login-paid">
+            <a href="https://github.com/CMIXA" target="_blank">
+              <img class="social-media" src="images/github-W.png" />
+            </a>
+            <a
+              id="right-link"
+              href="https://www.linkedin.com/in/christopher-mixa/"
+              target="/blank"
+            >
+              <img class="social-media" src="images/linkedin-W.png" />
+            </a>
+            <a
+              class="contact-button"
+              id="right-link"
+              href="#Contact"
+              onclick="scrollToSection('#Contact')"
+            >
+              <button>Contact me</button>
+            </a>
+          </div>
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <ul class="navlinks-dropdown">
+            <li class="navbar-item">
+              <a href="#Home" onclick="scrollToSection('#Home')">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="#About" onclick="scrollToSection('#About')">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#Contact" onclick="scrollToSection('#Contact')"
+                >Contact</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--  -->
+
+      <!-- HOME SECTION -->
+      <section id="Home">
+        <div class="nav-space"></div>
+        <div class="home-section">
+          <div class="h-left-div">
+            <h1>Hi, I'm Chris</h1>
+            <h1>UI/UX Designer & Dev</h1>
+            <p>
+              Passionate about solving tech’s new challenges and creating
+              effortless experiences
+            </p>
+            <div class="button-container">
+              <a href="#About" onclick="scrollToSection('#About')">
+                <button>Learn more about me</button>
+              </a>
+              <a href="#Portfolio" onclick="scrollToSection('#Portfolio')">
+                <button>Check out my work</button>
+              </a>
+            </div>
+          </div>
+          <div class="h-right-div">
+            <img src="images/me4.png" />
+          </div>
+        </div>
+      </section>
+      <!--  -->
+
+      <!-- PROJECTS SECTION -->
+      <section class="portfolio-page" id="Portfolio">
+        <div class="portfolio-container">
+          <div class="portfolio-text">
+            <h2>My Portfolio</h2>
+            <p>
+              Discover a Diverse Collection of UX/UI Projects in My Portfolio.
+              From elegant user interfaces to captivating user experiences,
+              explore the innovative solutions I've crafted to make digital
+              interactions intuitive and simple to use.
+            </p>
+          </div>
+          <div class="portfolio-projects">
+            <div class="portfolio-projects-row">
+              <div class="square-container">
+                <a href="project1.html">
+                  <div class="square" id="sc-omni">
+                    <div class="text">
+                      <p>Omni Health App</p>
+                      <p>UX Case Study</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="square-container">
+                <a href="project2.html">
+                  <div class="square" id="sc-joi">
+                    <div class="text">
+                      <p class="text-title">Joi Generative AI</p>
+                      <p>In-Progress</p>
+                    </div>
+                    <div class="in-prog-text">
+                      <img src="images/support.png" alt="" />
+                      <p class="in-prog-sub">In-Progress</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="portfolio-projects-row">
+              <div class="square-container">
+                <a href="project3.html">
+                  <div class="square" id="sc-mo">
+                    <div class="text">
+                      <p>Mixa Orthopedics</p>
+                      <p>UX Case Study</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="square-container">
+                <a href="project4.html">
+                  <div class="square" id="sc-vrl">
+                    <div class="text">
+                      <p>VR Live</p>
+                      <p>UX Case Study</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="portfolio-projects-row">
+              <div class="square-container">
+                <a href="project5.html">
+                  <div class="square" id="sc-ii">
+                    <div class="text">
+                      <p>Immersive Insights</p>
+                      <p>UI Project</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="square-container">
+                <a href="project6.html">
+                  <div class="square" id="sc-pm8">
+                    <div class="text">
+                      <p>Project M8</p>
+                      <p>In-Progress</p>
+                    </div>
+                    <div class="in-prog-text">
+                      <img src="images/support.png" alt="" />
+                      <p class="in-prog-sub">In-Progress</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+
+      <!-- ABOUT SECTION -->
+      <section class="about-page" id="About">
+        <div class="about-section">
+          <div class="a-left-div">
+            <div class="about-text">
+              <h2 class="about-title">About me</h2>
+              <p>
+                I'm a self-taught UX/UI designer and software developer, driven
+                by an insatiable curiosity for new and emerging technologies
+                like Artificial Intelligence, Blockchain, and XR. With a passion
+                for crafting seamless user experiences, I delve into the world
+                of design and front-end development. Through my portfolio
+                website, I invite you to explore a fusion of innovation and
+                creativity, where every project is a canvas for problem-solving
+                and user-centric solutions. Join me on this journey as I strive
+                to shape the future with cutting-edge tech and intuitive designs
+                that leave a lasting impact.
+              </p>
+              <!-- <button>Check out my resume</button> -->
+            </div>
+            <a
+              href="https://docs.google.com/document/d/13O8WuhT5zbAtkgIj-Jpm3L5ObLsV3egbYrUlHdlkb98/edit?usp=sharing"
+              target="_blank"
+            >
+              <button>Check out my resume</button>
+            </a>
+          </div>
+          <div class="a-right-div">
+            <div class="img-wrapper">
+              <img src="images/Group 18 (2).png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="certs-section">
+          <div class="cert-title">
+            <h2>Certifications & Courses</h2>
+          </div>
+          <div class="cert-card-container">
+            <div class="cert-card">
+              <img class="cert-img" src="images/google (1).png" alt="" />
+              <p class="cert-plat">Coursera</p>
+              <p class="cert-name">Google UX Design Professional Certificate</p>
+              <a
+                href="https://www.coursera.org/account/accomplishments/professional-cert/R77BV9WGPHP3?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=prof"
+                target="_blank"
+              >
+                <button class="button-comp">See Certification</button>
+              </a>
+            </div>
+            <div class="cert-card">
+              <img class="cert-img" src="images/code.png" alt="" />
+              <p class="cert-plat">Udemy</p>
+              <p class="cert-name">2022 Web Development Bootcamp</p>
+              <a
+                href="https://www.udemy.com/certificate/UC-8e533edb-2969-4518-830e-280d330ef5ca/"
+                target="_blank"
+              >
+                <button class="button-comp">See Certification</button>
+              </a>
+            </div>
+            <div class="cert-card">
+              <img class="cert-img" src="images/python.png" alt="" />
+              <p class="cert-plat">Udemy</p>
+              <p class="cert-name">2021 Complete Python Bootcamp</p>
+              <a
+                href="https://www.udemy.com/certificate/UC-91d6b0c4-571d-40bd-ad09-ca62d7490f73/"
+                target="_blank"
+              >
+                <button class="button-comp">See Certification</button>
+              </a>
+            </div>
+            <div class="cert-card">
+              <img class="cert-img" src="images/duke.jpeg" alt="" />
+              <p class="cert-plat">Coursera</p>
+              <p class="cert-name">Duke Univeristy AI Product Management</p>
+              <div class="in-prog">
+                <img class="in-prog-img" src="images/clock.png" alt="" />
+                <p>In-Progress</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+
+      <!-- CONTACT SECTION -->
+      <section id="Contact">
+        <div class="contact-container">
+          <div class="contact-page">
+            <div class="contact-form-container">
+              <h2 class="contact-title-phone">Contact me</h2>
+              <div class="left-div">
+                <img
+                  class="contact-image"
+                  src="images/cm1.png"
+                  alt="initials"
+                />
+                <div class="contact-info">
+                  <div>
+                    <img class="contact-icon" src="images/email.png" />
+                    <p>cmixa8@gmail.com</p>
+                  </div>
+                  <div>
+                    <img class="contact-icon" src="images/phone.png" />
+                    <p>727-743-2397</p>
+                  </div>
+                  <div>
+                    <img class="contact-icon" src="images/location.png" />
+                    <p>St. Petersburg, FL</p>
+                  </div>
+                </div>
+              </div>
+              <div class="right-div">
+                <div class="form-title">
+                  <h2>Contact me</h2>
+                  <p>
+                    Don't hesitate to connect with me. I look forward to hearing
+                    from you and exploring opportunities to work together!
+                  </p>
+                </div>
+                <form
+                  action="https://formsubmit.co/cmixa8@gmail.com"
+                  method="POST"
+                  target="_blank"
+                >
+                  <div class="fl-name">
+                    <div class="f-name" id="div">
+                      <label>First Name</label>
+                      <input type="firstname" name="name" />
+                    </div>
+                    <div id="div">
+                      <label>Last Name</label>
+                      <input type="lastname" name="name" />
+                    </div>
+                  </div>
+                  <div id="div">
+                    <label>Email</label>
+                    <input type="email" name="email" />
+                  </div>
+                  <div id="div">
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+                  </div>
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://cmixa.github.io/UX_Portfolio/thankyou.html"
+                  />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <p class="footer-text">
+            Chris Mixa's Porfolio | Developed by CM on Github
+          </p>
+          <img src="images/github-W.png" alt="" />
+        </div>
+      </footer>
+      <!--  -->
+    </div>
+
+    <!-- <script src="navbar.js"></script>
+    <script src="script.js"></script>
+    <script src="index.js"></script> -->
+    <!-- Google tag (gtag.js) -->
+    <style>
+      /* Your CSS code remains the same */
+
+      /* Add a new CSS class to hide the navbar */
+      .navbar.hide {
+        transform: translateY(-100%);
+      }
+
+      /* Media query for larger screens */
+      @media screen and (min-width: 900px) {
+        /* Show the navbar by default on larger screens */
+        .navbar {
+          transform: translateY(0);
+        }
+
+        /* Hide the navbar when the 'hide' class is applied on larger screens */
+        .navbar.hide {
+          transform: translateY(-100%);
+        }
+      }
+    </style>
+
+    <script>
+      let prevScrollPos = window.pageYOffset;
+      let isLargeScreen = window.matchMedia("(min-width: 900px)").matches;
+      const navbar = document.querySelector(".navbar");
+
+      function handleScroll() {
+        const currentScrollPos = window.pageYOffset;
+
+        if (prevScrollPos > currentScrollPos) {
+          // Scrolling up, remove the 'hide' class to show the navbar
+          navbar.classList.remove("hide");
+        } else {
+          // Scrolling down, add the 'hide' class to hide the navbar
+          navbar.classList.add("hide");
+        }
+
+        prevScrollPos = currentScrollPos;
+      }
+
+      function handleWindowSizeChange(e) {
+        isLargeScreen = e.matches;
+
+        if (isLargeScreen) {
+          // Add the event listener for larger screens
+          window.addEventListener("scroll", handleScroll);
+          // Show the navbar when switching from smaller to larger screen
+          navbar.classList.remove("hide");
+        } else {
+          // Remove the event listener for smaller screens
+          window.removeEventListener("scroll", handleScroll);
+          // Show the navbar on smaller screens
+          navbar.classList.remove("hide");
+        }
+      }
+
+      // Initial check for window size and add event listener if needed
+      const initialMediaQuery = window.matchMedia("(min-width: 900px)");
+      initialMediaQuery.addListener(handleWindowSizeChange);
+      handleWindowSizeChange(initialMediaQuery);
+
+      const hamburgerMenu = document.getElementById("hamburgerMenu");
+      const dropdownMenu = document.getElementById("dropdownMenu");
+
+      hamburgerMenu.addEventListener("click", () => {
+        dropdownMenu.style.display =
+          dropdownMenu.style.display === "block" ? "none" : "block";
+      });
+
+      // Event listener to close the dropdown menu when clicking outside of it
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (target !== dropdownMenu && target !== hamburgerMenu) {
+          dropdownMenu.style.display = "none";
+        }
+      });
+
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QP78FGZ9BZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QP78FGZ9BZ");
+    </script>
+  </body>
+</html>
